@@ -22,11 +22,6 @@ class Router{
         $path = $this->request->getPath();
         $method = $this->request->getMethod();
         $callback = $this->routes[$method][$path] ?? false;
-        echo 'before';
-        echo ' '.$path.' ';
-        echo ' '.$method.' ';
-        print_r($callback);
-        echo 'after';
         if($callback === false){
             $this->response->setStatusCode(404);
             return $this->view("_404");
