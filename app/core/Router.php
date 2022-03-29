@@ -11,17 +11,17 @@ class Router{
         $this->request = $request;
         $this->response = $response;
     }
-    public function get($path, $callback){
-        $this->routes['get'][$path] = $callback;
+    public function get($uri, $callback){
+        $this->routes['get'][$uri] = $callback;
     }
-    public function post($path, $callback){
-        $this->routes['post'][$path] = $callback;
+    public function post($uri, $callback){
+        $this->routes['post'][$uri] = $callback;
     }
 
     public function resolve(){
-        $path = $this->request->getPath();
+        $uri = $this->request->getURI();
         $method = $this->request->getMethod();
-        $callback = $this->routes[$method][$path] ?? false;
+        $callback = $this->routes[$method][$uri] ?? false;
         if($callback === false){
             $this->response->setStatusCode(404);
             return $this->view("_404");
@@ -32,8 +32,8 @@ class Router{
         return call_user_func($callback);
     }
     public function view($view){
-        ob_start();
+        // ob_start();
         include_once Application::$ROOT_DIR."/app/views/$view.php";
-        return ob_get_clean();
+        // return ob_get_clean();
     }
 }
