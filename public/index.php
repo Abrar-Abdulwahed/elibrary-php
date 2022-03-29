@@ -12,4 +12,5 @@ $app->router->get('/login', 'pages/login');
 $app->router->get('/details', 'pages/details');
 $app->router->get('/category', 'pages/category');
 $app->router->get('/cart', 'pages/cart');
+$app->router->get('/stepper', 'pages/stepper');
 $app->run();

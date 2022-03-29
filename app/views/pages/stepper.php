@@ -14,7 +14,7 @@
             <div class="container">
                 <ul class="row align-content-center justify-content-space-between">
                     <li>
-                        <img src="imgs/register.svg">
+                        <img src="assets/imgs/register.svg">
                         <b>
                             <span onclick="openModal('signup-login-modal', 'loginForm')">
                                 ادخل لحسابك
@@ -26,45 +26,45 @@
                         </b>
                     </li>
                     <li>
-                        <a href="index.html">
-                            <img src="imgs/main.svg">
+                        <a href="/home">
+                            <img src="assets/imgs/main.svg">
                             الرئيسية
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/who.svg">
+                            <img src="assets/imgs/who.svg">
                             من نحن
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/warranty.svg">
+                            <img src="assets/imgs/warranty.svg">
                             اتصل بنا
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/help.svg">
+                            <img src="assets/imgs/help.svg">
                             المساعدة
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/privacy.svg">
+                            <img src="assets/imgs/privacy.svg">
                             سياسة الخصوصية
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/saudi.svg">
+                            <img src="assets/imgs/saudi.svg">
                             YER اليمن
                         </a>
                     </li>
                     <li class="change-language">
                         <a href="#">
                             <span>English</span>
-                            <img src="imgs/language.svg">
+                            <img src="assets/imgs/language.svg">
                         </a>
                     </li>
                 </ul>
@@ -76,12 +76,12 @@
         <div id="top-header" class="top-header py-1 relative">  
             <div class="container d-grid g-10">
                 <div class="toggle d-lg-none align-self-center">
-                    <img src="imgs/menubar.svg" alt="icon" width="20">
+                    <img src="assets/imgs/menubar.svg" alt="icon" width="20">
                 </div>
                 <nav class="mobile-nav d-none d-none d-lg-none">
                     <ul class="row align-content-center justify-content-space-between">
                         <li>
-                            <img src="imgs/register.svg">
+                            <img src="assets/imgs/register.svg">
                             <b>
                                 <span onclick="openModal('signup-login-modal', 'loginForm')">
                                     ادخل لحسابك
@@ -93,52 +93,52 @@
                             </b>
                         </li>
                         <li>
-                            <a href="index.html">
-                                <img src="imgs/main.svg">
+                            <a href="/home">
+                                <img src="assets/imgs/main.svg">
                                 الرئيسية
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/who.svg">
+                                <img src="assets/imgs/who.svg">
                                 من نحن
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/warranty.svg">
+                                <img src="assets/imgs/warranty.svg">
                                 اتصل بنا
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/help.svg">
+                                <img src="assets/imgs/help.svg">
                                 المساعدة
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/privacy.svg">
+                                <img src="assets/imgs/privacy.svg">
                                 سياسة الخصوصية
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/saudi.svg">
+                                <img src="assets/imgs/saudi.svg">
                                 YER اليمن
                             </a>
                         </li>
                         <li class="change-language">
                             <a href="#">
                                 <span>English</span>
-                                <img src="imgs/language.svg">
+                                <img src="assets/imgs/language.svg">
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <div class="text-align-center">
-                    <a href="index.html" class="logo">
-                        <img src="imgs/logo.png" alt="">
+                    <a href="/home" class="logo">
+                        <img src="assets/imgs/logo.png" alt="">
                     </a>
                 </div>
                 <form action="" class="d-flex">
@@ -156,8 +156,8 @@
                     </button>
                 </form>
                 <div class="text-align-center">
-                    <a class="cart-btn" href="pages/cart.html">
-                        <img src="imgs/cart.svg">
+                    <a class="cart-btn" href="pages/cart">
+                        <img src="assets/imgs/cart.svg">
                         <!-- <span class="cart-quantity" id="cart-quantity">0</span> -->
                     </a>
                 </div>  
@@ -187,7 +187,7 @@
 				<div class="cart-item px-2 pt-2 mt-1">
 					<div class="item-above d-flex">
 						<div class="ml-1">
-							<img src="imgs/books/book11.jpg" alt="user" width="40" />
+							<img src="assets/imgs/books/book11.jpg" alt="user" width="40" />
 						</div>
 						<div class="item-details">
 							<span class="h6">
@@ -228,20 +228,20 @@
 				<ul class="d-flex justify-content-space-between px-2">
 					<li>
 						<img
-							src="imgs/paymentMethods/americanExpress.svg"
+							src="assets/imgs/paymentMethods/americanExpress.svg"
 							alt=""
 							width="40"
 						/>
 					</li>
-					<li><img src="imgs/paymentMethods/mada.svg" alt="" width="40" /></li>
-					<li><img src="imgs/paymentMethods/visa.svg" alt="" width="40" /></li>
+					<li><img src="assets/imgs/paymentMethods/mada.svg" alt="" width="40" /></li>
+					<li><img src="assets/imgs/paymentMethods/visa.svg" alt="" width="40" /></li>
 					<li>
-						<img src="imgs/paymentMethods/masterCard.svg" alt="" width="40" />
+						<img src="assets/imgs/paymentMethods/masterCard.svg" alt="" width="40" />
 					</li>
 					<li>
-						<img src="imgs/paymentMethods/payInShop.svg" alt="" width="40" />
+						<img src="assets/imgs/paymentMethods/payInShop.svg" alt="" width="40" />
 					</li>
-					<li><img src="imgs/paymentMethods/qitaf.svg" alt="" width="40" /></li>
+					<li><img src="assets/imgs/paymentMethods/qitaf.svg" alt="" width="40" /></li>
 				</ul>
 				<input type="text" placeholder="card number" />
 				<input type="text" placeholder="expireDate" />
@@ -368,25 +368,25 @@
 							class="social-media d-flex justify-content-space-between md-justify-content-flex-start"
 						>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/facebook.svg" />
+								<img src="assets/imgs/socialMedia/facebook.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/twitter.svg" />
+								<img src="assets/imgs/socialMedia/twitter.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/youtube.svg" />
+								<img src="assets/imgs/socialMedia/youtube.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/instagram.svg" />
+								<img src="assets/imgs/socialMedia/instagram.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/linkedin.svg" />
+								<img src="assets/imgs/socialMedia/linkedin.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/snapshat.svg" />
+								<img src="assets/imgs/socialMedia/snapshat.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/music.svg" />
+								<img src="assets/imgs/socialMedia/music.svg" />
 							</a>
 						</div>
 					</div>
@@ -397,24 +397,24 @@
 			>
 				<div class="payment-method d-inline-block md-mr-3">
 					<img
-						src="imgs/paymentMethods/americanExpress.svg"
+						src="assets/imgs/paymentMethods/americanExpress.svg"
 						alt=""
 						style="background-color: #27ade4"
 					/>
-					<img src="imgs/paymentMethods/masterCard.svg" alt="" />
-					<img src="imgs/paymentMethods/visa.svg" alt="" />
+					<img src="assets/imgs/paymentMethods/masterCard.svg" alt="" />
+					<img src="assets/imgs/paymentMethods/visa.svg" alt="" />
 					<img
-						src="imgs/paymentMethods/mada.svg"
+						src="assets/imgs/paymentMethods/mada.svg"
 						alt=""
 						style="background-color: #fff; padding-block: 8px"
 					/>
 					<img
-						src="imgs/paymentMethods/qitaf.svg"
+						src="assets/imgs/paymentMethods/qitaf.svg"
 						alt=""
 						style="background-color: #fff"
 					/>
 					<img
-						src="imgs/paymentMethods/payInShop.svg"
+						src="assets/imgs/paymentMethods/payInShop.svg"
 						alt=""
 						style="background-color: #fff"
 					/>

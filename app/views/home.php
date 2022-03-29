@@ -34,7 +34,7 @@
                         >
                     </div>
                     <div>
-                        <img src="imgs/sliders/slider8.jpg" alt="">
+                        <img src="assets/imgs/sliders/slider8.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -48,16 +48,16 @@
                     </div>
                     <div class="section-content d-flex">
                         <button class="next-btn">
-                            <img src="./imgs/arrowNext.svg" alt="" width="40" class="arrow" onclick="oneStepSlider('scrolled', 'next', 1)" style="margin-top: -20px">
+                            <img src="./assets/imgs/arrowNext.svg" alt="" width="40" class="arrow" onclick="oneStepSlider('scrolled', 'next', 1)" style="margin-top: -20px">
                         </button>
                         <div class="d-flex scrolled">
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -71,7 +71,7 @@
                                     </p>
                                     <p class="offer-left">
                                         <img
-                                            src="./imgs/notification.svg"
+                                            src="./assets/imgs/notification.svg"
                                             alt="icon"
                                             width="30"
                                             class="pl-1"
@@ -84,28 +84,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/behind strong.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/behind strong.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -120,7 +120,7 @@
                                     </p>
                                     <p class="offer-left">
                                         <img
-                                            src="./imgs/notification.svg"
+                                            src="./assets/imgs/notification.svg"
                                             alt="icon"
                                             width="30"
                                             class="pl-1"
@@ -133,28 +133,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/love book.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/love book.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -168,7 +168,7 @@
                                     </p>
                                     <p class="offer-left">
                                         <img
-                                            src="./imgs/notification.svg"
+                                            src="./assets/imgs/notification.svg"
                                             alt="icon"
                                             width="30"
                                             class="pl-1"
@@ -181,28 +181,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct js-cart">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/who take me.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/who take me.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -218,7 +218,7 @@
                                     </p>
                                     <p class="offer-left">
                                         <img
-                                            src="./imgs/notification.svg"
+                                            src="./assets/imgs/notification.svg"
                                             alt="icon"
                                             width="30"
                                             class="pl-1"
@@ -231,28 +231,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -266,7 +266,7 @@
                                     </p>
                                     <p class="offer-left">
                                         <img
-                                            src="./imgs/notification.svg"
+                                            src="./assets/imgs/notification.svg"
                                             alt="icon"
                                             width="30"
                                             class="pl-1"
@@ -279,17 +279,17 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct js-cart">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
@@ -297,7 +297,7 @@
                         </div>
                         <button class="prev-btn">
                             <img
-                            src="./imgs/arrowNext.svg" alt="arrow" width="40px"
+                            src="./assets/imgs/arrowNext.svg" alt="arrow" width="40px"
                             style="transform: rotate(180deg); margin-top: -20px" class="arrow" onclick="oneStepSlider('scrolled', 'prev', 1)"      
                             >
                         </button>
@@ -310,16 +310,16 @@
                     </div>
                     <div class="section-content d-flex">
                         <button class="next-btn">
-                            <img src="./imgs/arrowNext.svg" alt="" width="40" class="arrow" onclick="oneStepSlider('scrolled', 'next', 2)">
+                            <img src="./assets/imgs/arrowNext.svg" alt="" width="40" class="arrow" onclick="oneStepSlider('scrolled', 'next', 2)">
                         </button>
                         <div class="d-flex scrolled">
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -335,28 +335,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/behind strong.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/behind strong.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -373,28 +373,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/love book.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/love book.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -410,28 +410,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct js-cart">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/who take me.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/who take me.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -449,28 +449,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -486,17 +486,17 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct js-cart">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
@@ -504,7 +504,7 @@
                         </div>
                         <button class="prev-btn">
                             <img
-                            src="./imgs/arrowNext.svg" alt="arrow" width="40px"
+                            src="./assets/imgs/arrowNext.svg" alt="arrow" width="40px"
                             style="transform: rotate(180deg); margin-top: -20px" class="arrow" onclick="oneStepSlider('scrolled', 'prev', 2)"      
                             >
                         </button>
@@ -517,16 +517,16 @@
                     </div>
                     <div class="section-content d-flex">
                         <button class="next-btn">
-                            <img src="./imgs/arrowNext.svg" alt="" width="40" class="arrow" onclick="oneStepSlider('scrolled', 'next', 2)">
+                            <img src="./assets/imgs/arrowNext.svg" alt="" width="40" class="arrow" onclick="oneStepSlider('scrolled', 'next', 2)">
                         </button>
                         <div class="d-flex scrolled">
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -542,28 +542,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/behind strong.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/behind strong.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -580,28 +580,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/love book.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/love book.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -617,28 +617,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct js-cart">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/who take me.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/who take me.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -656,28 +656,28 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-item">
                                 <a href="/details" class="link">
-                                    <img src="./imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
+                                    <img src="./assets/imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
                                     <h5 class="card-type">
-                                        <img src="./imgs/redBook.svg" alt="">
+                                        <img src="./assets/imgs/redBook.svg" alt="">
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
@@ -693,17 +693,17 @@
                                 <ul class="card-footer px-2 d-flex justify-content-space-between align-items-center">
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/main.svg">
+                                            <img src="./assets/imgs/main.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a class="addProduct js-cart">
-                                            <img src="./imgs/addProduct.svg">
+                                            <img src="./assets/imgs/addProduct.svg">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./imgs/exchange.svg">
+                                            <img src="./assets/imgs/exchange.svg">
                                         </a>
                                     </li>
                                 </ul>
@@ -711,7 +711,7 @@
                         </div>
                         <button class="prev-btn">
                             <img
-                            src="./imgs/arrowNext.svg" alt="arrow" width="40px"
+                            src="./assets/imgs/arrowNext.svg" alt="arrow" width="40px"
                             style="transform: rotate(180deg); margin-top: -20px" class="arrow" onclick="oneStepSlider('scrolled', 'prev', 2)"      
                             >
                         </button>

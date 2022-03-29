@@ -14,7 +14,7 @@
             <div class="container">
                 <ul class="row align-content-center justify-content-space-between">
                     <li>
-                        <img src="imgs/register.svg">
+                        <img src="assets/imgs/register.svg">
                         <b>
                             <span onclick="openModal('signup-login-modal', 'loginForm')">
                                 ادخل لحسابك
@@ -26,45 +26,45 @@
                         </b>
                     </li>
                     <li>
-                        <a href="index.html">
-                            <img src="imgs/main.svg">
+                        <a href="/home">
+                            <img src="assets/imgs/main.svg">
                             الرئيسية
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/who.svg">
+                            <img src="assets/imgs/who.svg">
                             من نحن
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/warranty.svg">
+                            <img src="assets/imgs/warranty.svg">
                             اتصل بنا
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/help.svg">
+                            <img src="assets/imgs/help.svg">
                             المساعدة
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/privacy.svg">
+                            <img src="assets/imgs/privacy.svg">
                             سياسة الخصوصية
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/saudi.svg">
+                            <img src="assets/imgs/saudi.svg">
                             YER اليمن
                         </a>
                     </li>
                     <li class="change-language">
                         <a href="#">
                             <span>English</span>
-                            <img src="imgs/language.svg">
+                            <img src="assets/imgs/language.svg">
                         </a>
                     </li>
                 </ul>
@@ -76,12 +76,12 @@
         <div id="top-header" class="top-header py-1 relative">  
             <div class="container d-grid g-10">
                 <div class="toggle d-lg-none align-self-center">
-                    <img src="imgs/menubar.svg" alt="icon" width="20">
+                    <img src="assets/imgs/menubar.svg" alt="icon" width="20">
                 </div>
                 <nav class="mobile-nav d-none d-none d-lg-none">
                     <ul class="row align-content-center justify-content-space-between">
                         <li>
-                            <img src="imgs/register.svg">
+                            <img src="assets/imgs/register.svg">
                             <b>
                                 <span onclick="openModal('signup-login-modal', 'loginForm')">
                                     ادخل لحسابك
@@ -93,52 +93,52 @@
                             </b>
                         </li>
                         <li>
-                            <a href="index.html">
-                                <img src="imgs/main.svg">
+                            <a href="/home">
+                                <img src="assets/imgs/main.svg">
                                 الرئيسية
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/who.svg">
+                                <img src="assets/imgs/who.svg">
                                 من نحن
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/warranty.svg">
+                                <img src="assets/imgs/warranty.svg">
                                 اتصل بنا
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/help.svg">
+                                <img src="assets/imgs/help.svg">
                                 المساعدة
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/privacy.svg">
+                                <img src="assets/imgs/privacy.svg">
                                 سياسة الخصوصية
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="imgs/saudi.svg">
+                                <img src="assets/imgs/saudi.svg">
                                 YER اليمن
                             </a>
                         </li>
                         <li class="change-language">
                             <a href="#">
                                 <span>English</span>
-                                <img src="imgs/language.svg">
+                                <img src="assets/imgs/language.svg">
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <div class="text-align-center">
-                    <a href="index.html" class="logo">
-                        <img src="imgs/logo.png" alt="">
+                    <a href="/home" class="logo">
+                        <img src="assets/imgs/logo.png" alt="">
                     </a>
                 </div>
                 <form action="" class="d-flex">
@@ -156,8 +156,8 @@
                     </button>
                 </form>
                 <div class="text-align-center">
-                    <a class="cart-btn" href="pages/cart.html">
-                        <img src="imgs/cart.svg">
+                    <a class="cart-btn" href="pages/cart">
+                        <img src="assets/imgs/cart.svg">
                         <!-- <span class="cart-quantity" id="cart-quantity">0</span> -->
                     </a>
                 </div>  
@@ -166,7 +166,7 @@
 		<section class="details-section mb-2">
 			<div class="container">
 				<ul class="breadcrumb d-flex">
-					<li><a href="index.html">الرئيسية</a></li>
+					<li><a href="/home">الرئيسية</a></li>
 					<li><a href="#">الكتب العربية</a></li>
 					<li><a href="#">كتب إلكترونية</a></li>
 					<li>لأنك الله (كتاب إلكتروني)</li>
@@ -174,19 +174,19 @@
 				<div class="row g-20 justify-content-center align-items-flex-start">
 					<div class="col-xs-12 col-sm-5 col-md-3 item-images">
 						<img
-							src="imgs/books/book1.jpg"
+							src="assets/imgs/books/book1.jpg"
 							alt="item"
 							onclick="openModal('slideShowModal')"
 						/>
 						<ul class="other-images d-flex justify-content-center g-10 my-1">
 							<li>
-								<img src="imgs/books/book3.jpg" alt="item-part" width="20" />
+								<img src="assets/imgs/books/book3.jpg" alt="item-part" width="20" />
 							</li>
 							<li>
-								<img src="imgs/books/book5.jpg" alt="item-part" width="20" />
+								<img src="assets/imgs/books/book5.jpg" alt="item-part" width="20" />
 							</li>
 							<li>
-								<img src="imgs/books/book6.jpg" alt="item-part" width="20" />
+								<img src="assets/imgs/books/book6.jpg" alt="item-part" width="20" />
 							</li>
 						</ul>
 						<div id="slideShowModal" class="modal">
@@ -201,17 +201,17 @@
 									<div class="gallery-container slider">
 										<img
 											class="gallery-item slider-item"
-											src="imgs/books/book3.jpg"
+											src="assets/imgs/books/book3.jpg"
 											data-index="3"
 										/>
 										<img
 											class="gallery-item slider-item"
-											src="imgs/books/book5.jpg"
+											src="assets/imgs/books/book5.jpg"
 											data-index="5"
 										/>
 										<img
 											class="gallery-item slider-item"
-											src="imgs/books/book6.jpg"
+											src="assets/imgs/books/book6.jpg"
 											data-index="6"
 										/>
 									</div>
@@ -221,21 +221,21 @@
 								<ul class="dots d-flex justify-content-center g-10 my-1">
 									<li class="indicator" onclick="currentSlide(2)">
 										<img
-											src="imgs/books/book3.jpg"
+											src="assets/imgs/books/book3.jpg"
 											alt="item-part"
 											width="20"
 										/>
 									</li>
 									<li class="indicator" onclick="currentSlide(4)">
 										<img
-											src="imgs/books/book5.jpg"
+											src="assets/imgs/books/book5.jpg"
 											alt="item-part"
 											width="20"
 										/>
 									</li>
 									<li class="indicator" onclick="currentSlide(5)">
 										<img
-											src="imgs/books/book6.jpg"
+											src="assets/imgs/books/book6.jpg"
 											alt="item-part"
 											width="20"
 										/>
@@ -256,19 +256,19 @@
 								<br /><span class="number-reviews">
 									<ul class="inline-flex justify-content-flex-end">
 										<li>
-											<img src="imgs/reviews.svg" alt="icon" width="20" />
+											<img src="assets/imgs/reviews.svg" alt="icon" width="20" />
 										</li>
 										<li>
-											<img src="imgs/reviews.svg" alt="icon" width="20" />
+											<img src="assets/imgs/reviews.svg" alt="icon" width="20" />
 										</li>
 										<li>
-											<img src="imgs/reviews.svg" alt="icon" width="20" />
+											<img src="assets/imgs/reviews.svg" alt="icon" width="20" />
 										</li>
 										<li>
-											<img src="imgs/reviews.svg" alt="icon" width="20" />
+											<img src="assets/imgs/reviews.svg" alt="icon" width="20" />
 										</li>
 										<li>
-											<img src="imgs/reviews.svg" alt="icon" width="20" />
+											<img src="assets/imgs/reviews.svg" alt="icon" width="20" />
 										</li>
 									</ul>
 									(15 المراجعات)
@@ -324,34 +324,34 @@
 									<option value="1">1</option>
 								</select>
 								<button class="btn danger-btn f-auto round-5 js-cart">
-									<img src="imgs/addProduct.svg" /> أضف إلى السلة
+									<img src="assets/imgs/addProduct.svg" /> أضف إلى السلة
 								</button>
 							</div>
 							<ul class="d-flex option-tool">
 								<li>
-									<img src="imgs/opacity-lock.svg" />تسوق آمن<img
-										src="imgs/question.svg"
+									<img src="assets/imgs/opacity-lock.svg" />تسوق آمن<img
+										src="assets/imgs/question.svg"
 										alt="que icon"
 									/>
 								</li>
 								<li>
-									<img src="imgs/opacity-garrantee.svg" alt="" />أصلي ومضمون<img
-										src="imgs/question.svg"
+									<img src="assets/imgs/opacity-garrantee.svg" alt="" />أصلي ومضمون<img
+										src="assets/imgs/question.svg"
 										alt="que icon"
 									/>
 								</li>
 								<li>
-									<img src="imgs/opacity-tranform.svg" alt="" />شحن سريع
-									ومجاني<img src="imgs/question.svg" alt="que icon" />
+									<img src="assets/imgs/opacity-tranform.svg" alt="" />شحن سريع
+									ومجاني<img src="assets/imgs/question.svg" alt="que icon" />
 								</li>
 							</ul>
 							<ul
 								class="option-buttons d-flex g-20 justify-content-space-between mt-2 py-1"
 							>
-								<li><img src="imgs/share.svg" alt="share icon" />مشاركة</li>
-								<li><img src="imgs/love.svg" alt="love icon" />المفضلة</li>
+								<li><img src="assets/imgs/share.svg" alt="share icon" />مشاركة</li>
+								<li><img src="assets/imgs/love.svg" alt="love icon" />المفضلة</li>
 								<li>
-									<img src="imgs/compare.svg" alt="compare icon" /> مقارنة
+									<img src="assets/imgs/compare.svg" alt="compare icon" /> مقارنة
 								</li>
 							</ul>
 						</div>
@@ -359,10 +359,10 @@
 							<ul
 								class="option-buttons d-flex g-20 justify-content-space-between mt-2 py-1"
 							>
-								<li><img src="imgs/share.svg" alt="share icon" />مشاركة</li>
-								<li><img src="imgs/love.svg" alt="love icon" />المفضلة</li>
+								<li><img src="assets/imgs/share.svg" alt="share icon" />مشاركة</li>
+								<li><img src="assets/imgs/love.svg" alt="love icon" />المفضلة</li>
 								<li>
-									<img src="imgs/compare.svg" alt="compare icon" /> مقارنة
+									<img src="assets/imgs/compare.svg" alt="compare icon" /> مقارنة
 								</li>
 							</ul>
 						</div>
@@ -425,7 +425,7 @@
 				<div class="d-flex mb-2 align-items-center">
 					<span class="h4 d-block p-1">مراجعات العملاء</span>
 					<button class="round-5">
-						<img src="imgs/plus.svg" alt="plus" /> اكتب مراجعتك
+						<img src="assets/imgs/plus.svg" alt="plus" /> اكتب مراجعتك
 					</button>
 				</div>
 				<div class="row">
@@ -466,11 +466,11 @@
 				<div class="row g-20">
 					<div class="item-semilar p-1">
 						<div>
-							<a href="pages/details.html" class="link">
-								<img src="imgs/books/book9.jpg" alt="" width="100%" />
+							<a href="pages/details" class="link">
+								<img src="assets/imgs/books/book9.jpg" alt="" width="100%" />
 							</a>
 							<h5>
-								<img src="imgs/redBook.svg" alt="" />
+								<img src="assets/imgs/redBook.svg" alt="" />
 								الصلاة وحكم تاركها
 							</h5>
 						</div>
@@ -482,11 +482,11 @@
 					</div>
 					<div class="item-semilar">
 						<div>
-							<a href="pages/details.html" class="link">
-								<img src="imgs/books/book3.jpg" alt="" width="100%" />
+							<a href="pages/details" class="link">
+								<img src="assets/imgs/books/book3.jpg" alt="" width="100%" />
 							</a>
 							<h5>
-								<img src="imgs/redBook.svg" alt="" />
+								<img src="assets/imgs/redBook.svg" alt="" />
 								الصلاة وحكم تاركها
 							</h5>
 						</div>
@@ -498,11 +498,11 @@
 					</div>
 					<div class="item-semilar">
 						<div>
-							<a href="pages/details.html" class="link">
-								<img src="imgs/books/book2.jpg" alt="" width="100%" />
+							<a href="pages/details" class="link">
+								<img src="assets/imgs/books/book2.jpg" alt="" width="100%" />
 							</a>
 							<h5>
-								<img src="imgs/redBook.svg" alt="" />
+								<img src="assets/imgs/redBook.svg" alt="" />
 								الصلاة وحكم تاركها
 							</h5>
 						</div>
@@ -514,11 +514,11 @@
 					</div>
 					<div class="item-semilar">
 						<div>
-							<a href="pages/details.html" class="link">
-								<img src="imgs/books/book10.jpg" alt="" width="100%" />
+							<a href="pages/details" class="link">
+								<img src="assets/imgs/books/book10.jpg" alt="" width="100%" />
 							</a>
 							<h5>
-								<img src="imgs/redBook.svg" alt="" />
+								<img src="assets/imgs/redBook.svg" alt="" />
 								الصلاة وحكم تاركها
 							</h5>
 						</div>
@@ -530,11 +530,11 @@
 					</div>
 					<div class="item-semilar">
 						<div>
-							<a href="pages/details.html" class="link">
-								<img src="imgs/books/book6.jpg" alt="" width="100%" />
+							<a href="pages/details" class="link">
+								<img src="assets/imgs/books/book6.jpg" alt="" width="100%" />
 							</a>
 							<h5>
-								<img src="imgs/redBook.svg" alt="" />
+								<img src="assets/imgs/redBook.svg" alt="" />
 								الصلاة وحكم تاركها
 							</h5>
 						</div>
@@ -546,11 +546,11 @@
 					</div>
 					<div class="item-semilar">
 						<div>
-							<a href="pages/details.html" class="link">
-								<img src="imgs/books/book4.jpg" alt="" width="100%" />
+							<a href="pages/details" class="link">
+								<img src="assets/imgs/books/book4.jpg" alt="" width="100%" />
 							</a>
 							<h5>
-								<img src="imgs/redBook.svg" alt="" />
+								<img src="assets/imgs/redBook.svg" alt="" />
 								الصلاة وحكم تاركها
 							</h5>
 						</div>
@@ -680,25 +680,25 @@
 							class="social-media d-flex justify-content-space-between md-justify-content-flex-start"
 						>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/facebook.svg" />
+								<img src="assets/imgs/socialMedia/facebook.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/twitter.svg" />
+								<img src="assets/imgs/socialMedia/twitter.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/youtube.svg" />
+								<img src="assets/imgs/socialMedia/youtube.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/instagram.svg" />
+								<img src="assets/imgs/socialMedia/instagram.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/linkedin.svg" />
+								<img src="assets/imgs/socialMedia/linkedin.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/snapshat.svg" />
+								<img src="assets/imgs/socialMedia/snapshat.svg" />
 							</a>
 							<a href="#" class="social-icon">
-								<img src="imgs/socialMedia/music.svg" />
+								<img src="assets/imgs/socialMedia/music.svg" />
 							</a>
 						</div>
 					</div>
@@ -709,24 +709,24 @@
 			>
 				<div class="payment-method d-inline-block md-mr-3">
 					<img
-						src="imgs/paymentMethods/americanExpress.svg"
+						src="assets/imgs/paymentMethods/americanExpress.svg"
 						alt=""
 						style="background-color: #27ade4"
 					/>
-					<img src="imgs/paymentMethods/masterCard.svg" alt="" />
-					<img src="imgs/paymentMethods/visa.svg" alt="" />
+					<img src="assets/imgs/paymentMethods/masterCard.svg" alt="" />
+					<img src="assets/imgs/paymentMethods/visa.svg" alt="" />
 					<img
-						src="imgs/paymentMethods/mada.svg"
+						src="assets/imgs/paymentMethods/mada.svg"
 						alt=""
 						style="background-color: #fff; padding-block: 8px"
 					/>
 					<img
-						src="imgs/paymentMethods/qitaf.svg"
+						src="assets/imgs/paymentMethods/qitaf.svg"
 						alt=""
 						style="background-color: #fff"
 					/>
 					<img
-						src="imgs/paymentMethods/payInShop.svg"
+						src="assets/imgs/paymentMethods/payInShop.svg"
 						alt=""
 						style="background-color: #fff"
 					/>
