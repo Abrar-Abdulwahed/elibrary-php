@@ -44,7 +44,7 @@
                 <section class="category-details-row py-2">
                     <div class="section-top d-flex align-items-baseline justify-content-space-between">
                         <h2 class="h3 mb-1">العروض الحالية</h2>
-                        <a href="./pages/category.html">عرض الكل</a>
+                        <a href="/category">عرض الكل</a>
                     </div>
                     <div class="section-content d-flex">
                         <button class="next-btn">
@@ -52,7 +52,7 @@
                         </button>
                         <div class="d-flex scrolled">
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -61,7 +61,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">كبرياء وهوى(كتاب إلكتروني)</a>
+                                        <a href="details">كبرياء وهوى(كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -100,7 +100,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/behind strong.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -109,7 +109,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">خلف قوتي ضعف يحبك (كتاب إلكتروني)
+                                        <a href="/details">خلف قوتي ضعف يحبك (كتاب إلكتروني)
                                         </a>
                                     </p>
                                     <p class="price my-1">
@@ -149,7 +149,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/love book.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -158,7 +158,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">كتالوج الحب (كتاب إلكتروني)</a>
+                                        <a href="/details">كتالوج الحب (كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -197,7 +197,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/who take me.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -206,7 +206,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">إلى الذي أسرني حبه (كتاب إلكتروني)
+                                        <a href="/details">إلى الذي أسرني حبه (كتاب إلكتروني)
                                         </a
                                         >
                                     </p>
@@ -247,7 +247,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -256,7 +256,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">زواج غير متوقع (كتاب إلكتروني)</a>
+                                        <a href="/details">زواج غير متوقع (كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -306,7 +306,7 @@
                 <section class="category-details-row py-2">
                     <div class="section-top d-flex align-items-baseline justify-content-space-between">
                         <h2 class="h3 mb-1">الكتب الدينية</h2>
-                        <a href="./pages/category.html">عرض الكل</a>
+                        <a href="/category">عرض الكل</a>
                     </div>
                     <div class="section-content d-flex">
                         <button class="next-btn">
@@ -314,7 +314,7 @@
                         </button>
                         <div class="d-flex scrolled">
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -323,7 +323,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">كبرياء وهوى(كتاب إلكتروني)</a>
+                                        <a href="/details">كبرياء وهوى(كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -351,7 +351,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/behind strong.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -360,7 +360,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">خلف قوتي ضعف يحبك (كتاب إلكتروني)
+                                        <a href="/details">خلف قوتي ضعف يحبك (كتاب إلكتروني)
                                         </a>
                                     </p>
                                     <p class="price my-1">
@@ -389,7 +389,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/love book.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -398,7 +398,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">كتالوج الحب (كتاب إلكتروني)</a>
+                                        <a href="/details">كتالوج الحب (كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -426,7 +426,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/who take me.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -435,7 +435,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">إلى الذي أسرني حبه (كتاب إلكتروني)
+                                        <a href="/details">إلى الذي أسرني حبه (كتاب إلكتروني)
                                         </a
                                         >
                                     </p>
@@ -465,7 +465,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -474,7 +474,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">زواج غير متوقع (كتاب إلكتروني)</a>
+                                        <a href="/details">زواج غير متوقع (كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -513,7 +513,7 @@
                 <section class="category-details-row py-2">
                     <div class="section-top d-flex align-items-baseline justify-content-space-between">
                         <h2 class="h3 mb-1">الكتب التاريخية</h2>
-                        <a href="./pages/category.html">عرض الكل</a>
+                        <a href="/category">عرض الكل</a>
                     </div>
                     <div class="section-content d-flex">
                         <button class="next-btn">
@@ -521,7 +521,7 @@
                         </button>
                         <div class="d-flex scrolled">
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/كبرياء وهوى.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -530,7 +530,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">كبرياء وهوى(كتاب إلكتروني)</a>
+                                        <a href="/details">كبرياء وهوى(كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -558,7 +558,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/behind strong.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -567,7 +567,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">خلف قوتي ضعف يحبك (كتاب إلكتروني)
+                                        <a href="/details">خلف قوتي ضعف يحبك (كتاب إلكتروني)
                                         </a>
                                     </p>
                                     <p class="price my-1">
@@ -596,7 +596,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/love book.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -605,7 +605,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">كتالوج الحب (كتاب إلكتروني)</a>
+                                        <a href="/details">كتالوج الحب (كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
@@ -633,7 +633,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/who take me.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -642,7 +642,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">إلى الذي أسرني حبه (كتاب إلكتروني)
+                                        <a href="/details">إلى الذي أسرني حبه (كتاب إلكتروني)
                                         </a
                                         >
                                     </p>
@@ -672,7 +672,7 @@
                                 </ul>
                             </div>
                             <div class="card-item">
-                                <a href="./pages/details.html" class="link">
+                                <a href="/details" class="link">
                                     <img src="./imgs/books/unexpected marriage.jpg" alt="book img" width="100%">
                                 </a>
                                 <div class="card-body px-2 text-align-center">
@@ -681,7 +681,7 @@
                                         كتاب الكتروني
                                     </h5>
                                     <p class="card-name">
-                                        <a href="./pages/details.html">زواج غير متوقع (كتاب إلكتروني)</a>
+                                        <a href="/details">زواج غير متوقع (كتاب إلكتروني)</a>
                                     </p>
                                     <p class="price my-1">
                                         <span class="h3">17.99</span>
