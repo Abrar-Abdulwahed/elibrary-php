@@ -7,7 +7,6 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/all.min.css">
-		<base href="../" />
 	</head>
 	<body>
 		<nav class="main-nav d-lg-block" id="main-nav">

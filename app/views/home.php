@@ -1,7 +1,7 @@
 <?php
-    include_once 'includes/head.php';
-    include_once 'includes/nav.php';
-    include_once 'includes/header.php';
+    include 'includes/head.php';
+    include 'includes/nav.php';
+    include 'includes/header.php';
 ?>
 <section class="adBanner-section py-2">
     <div class="container">
