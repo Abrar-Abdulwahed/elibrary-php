@@ -484,7 +484,7 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
 
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الأقسام/</span> عرض الأقسام</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الكتب/</span> عرض الكتب</h4>
 
            
 
@@ -492,13 +492,13 @@
             <!-- Multi Column with Form Separator -->
             <!-- Bordered Table -->
 <div class="card">
-  <h5 class="card-header">Bordered Table</h5>
+  <h5 class="card-header">Book Table</h5>
   <div class="card-body">
     <div class="table-responsive text-nowrap">
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>اسم القسم</th>
+            <th>اسم الكتاب</th>
             <th>الصورة</th>
             <th>الحالة</th>
             
