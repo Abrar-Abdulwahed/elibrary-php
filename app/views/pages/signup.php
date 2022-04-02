@@ -3,8 +3,8 @@
 	<div class="row justify-content-center">
 		<div class="col-xs-12 col-sm-12 col-md-5">
 			<h2 class="h3 my-2 text-align-center">إنشاء حساب</h2>
-			<form action="" class="flex-col">
-				<div class="form-control mt-1">
+			<form action="/register"  method="POST" class="flex-col">
+				<!-- <div class="form-control mt-1">
 					<label for="mobileNo"></label>
 					<input
 						id="mobileNo"
@@ -34,13 +34,13 @@
 						name="confirmCode"
 						placeholder="ادخل رمز التحقق"
 					/>
-				</div>
+				</div> -->
 				<div class="form-control mt-1">
 					<label for="firstName"></label>
 					<input
 						id="firstName"
 						type="text"
-						name="firstName"
+						name="firstname"
 						placeholder="ادخل الاسم الأول"
 					/>
 				</div>
@@ -49,7 +49,7 @@
 					<input
 						id="lastName"
 						type="text"
-						name="lastName"
+						name="lastname"
 						placeholder="ادخل اللقب"
 					/>
 				</div>
@@ -58,11 +58,11 @@
 					<input
 						id="email1"
 						type="email"
-						name="email1"
+						name="email"
 						placeholder="البريد الالكتروني"
 					/>
 				</div>
-				<div class="form-control mt-1">
+				<!-- <div class="form-control mt-1">
 					<label for="email2"></label>
 					<input
 						id="email2"
@@ -70,7 +70,7 @@
 						name="email2"
 						placeholder="تأكيد البريد الالكتروني"
 					/>
-				</div>
+				</div> -->
 				<div class="form-control mt-1">
 					<label for="password"></label>
 					<input
