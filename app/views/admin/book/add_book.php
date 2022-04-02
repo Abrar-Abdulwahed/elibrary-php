@@ -433,26 +433,26 @@ include_once $URLROOT.'/includes/head.php' ?>
         <div class="content-wrapper">
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y">     
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الأقسام/</span> إنشاء قسم</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الكتب/</span>إدخال كتاب</h4>
             <!-- Multi Column with Form Separator -->
             <div class="card mb-4">
-              <h5 class="card-header">انشاء قسم جديد</h5>
+              <h5 class="card-header">إدخال كتاب جديد</h5>
               <form class="card-body" action="/add_category" method="POST" enctype="multipart/form-data">
                 
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label" for="multicol-username">اسم القسم</label>
+                    <label class="form-label" for="multicol-username">اسم الكتاب</label>
                     <input name="category_name" type="text" id="multicol-username" class="form-control" placeholder="ex. programming" />
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label" for="multicol-email">صورة القسم</label>
+                    <label class="form-label" for="multicol-email">صورة الكتاب</label>
                     <div class="input-group input-group-merge">
                       <input  name="image" type="file"  class="form-control"  aria-describedby="multicol-email2" />    
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-password-toggle">
-                      <label class="form-label" for="multicol-confirm-password">تفعيل القسم</label>
+                      <label class="form-label" for="multicol-confirm-password">تفعيل الكتاب</label>
                       <div class="input-group input-group-merge">
                       <label class="switch">
                           <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
