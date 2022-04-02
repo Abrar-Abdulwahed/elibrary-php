@@ -453,15 +453,15 @@
                     <tbody>
                   
                     
-                    <?php foreach($params as $category){?>
+                    <?php foreach($params as $book){?>
                       <tr>
                         
-                        <td><?= $category['name'];?></td>
+                        <td><?= $book['name'];?></td>
                         <td>
-                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $category['image'];?>">
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= book['image'];?>">
                         </td>
                         <td>
-                          <?php if($category['is_active']==1) {?>    
+                          <?php if($book['is_active'] == 1) {?>    
                           <span class="badge bg-label-success me-1">مفعل</span>
                           <?php }
                           else {?>
@@ -469,12 +469,12 @@
                           <?php } ?>
                         </td>
                         <td>
-                          <a href="/update_book/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
+                          <a href="/update_book/<?php echo $book['id'];?>" class="btn btn-icon btn-outline-dribbble">
                               <i class="tf-icons bx bx-edit-alt me-1"></i>
                           </a>
-                          <form action="/delete_or_recovery_book/<?=  $category['id']; ?>" method="POST" style="display: inline-block;">
+                          <form action="/delete_or_recovery_book/<?=  $book['id']; ?>" method="POST" style="display: inline-block;">
                             <button type="submit" class="btn btn-icon btn-outline-dribbble">
-                            <?php if($category['is_active']==1) {?>    
+                            <?php if($book['is_active']==1) {?>    
                                 <i class="tf-icons bx bx-trash me-1"></i>
                             <?php }
                             else {?>

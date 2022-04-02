@@ -442,7 +442,7 @@ include_once $URLROOT.'/includes/head.php' ?>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="multicol-username">اسم الكتاب</label>
-                    <input name="category_name" type="text" id="multicol-username" class="form-control" value="<?php echo $params->name ?>" />
+                    <input name="book_name" type="text" id="multicol-username" class="form-control" value="<?php echo $params->name ?>" />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="multicol-email">صورة الكتاب</label>
