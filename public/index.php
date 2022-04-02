@@ -4,6 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use elibrary\app\controllers\SiteCtrl;
 use elibrary\app\controllers\UserCtrl;
 use elibrary\app\controllers\CategoryCtrl;
+use elibrary\app\controllers\BookCtrl;
 use elibrary\app\core\Application;
 use elibrary\app\core\Router;
 use Dotenv\Dotenv;
@@ -43,5 +44,14 @@ Router::post('/add_category',[CategoryCtrl::class,'create']);
 Router::get('/update_category/{id}',[CategoryCtrl::class,'update']);
 Router::post('/update_category',[CategoryCtrl::class,'update']);
 Router::post('/delete_or_recovery_category/{id}',[CategoryCtrl::class,'delete_or_recovery']);
+
+/* ====================== Book Routes ====================== */
+Router::get('/books',[BookCtrl::class,'listAll']);
+Router::get('/add_book',[BookCtrl::class,'create']);
+Router::post('/add_book',[BookCtrl::class,'create']);
+Router::get('/update_book/{id}',[BookCtrl::class,'update']);
+Router::post('/update_book',[BookCtrl::class,'update']);
+Router::post('/delete_or_recovery_book/{id}',[BookCtrl::class,'delete_or_recovery']);
+
 /** offer routes  */
 $app->start();

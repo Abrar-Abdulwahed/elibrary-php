@@ -98,22 +98,37 @@
   <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
       <i class="menu-icon tf-icons bx bx-category"></i>
-      <!-- <i class="fa-solid fa-cubes"></i> -->
       <div data-i18n="القسم">القسم</div>
     </a>
     <ul class="menu-sub">
-    <li class="menu-item">
+      <li class="menu-item">
         <a href="/add_category" class="menu-link">
           <div data-i18n="اضافة قسم">اضافة قسم</div>
         </a>
       </li>
-
       <li class="menu-item">
         <a href="/categories" class="menu-link">
           <div data-i18n="عرض الاقسام">عرض الاقسام</div>
         </a>
       </li>
-     
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-book"></i>
+      <div data-i18n="الكتاب"> الكتاب  </div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="/add_book" class="menu-link">
+          <div data-i18n="إضافة كتاب">عرض الكتب</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/books" class="menu-link">
+          <div data-i18n="عرض الاقسام">عرض الاقسام</div>
+        </a>
+      </li>
     </ul>
   </li>
 </aside>
