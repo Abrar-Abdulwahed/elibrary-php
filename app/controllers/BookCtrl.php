@@ -17,7 +17,7 @@ class BookCtrl extends Controller{
     function listAll($parameters=null){
         $categories=new BookModel();
         $allCategories=$categories->getAll();
-        $this->view('admin/book/list_categories',$allCategories);
+        $this->view('admin/book/list_books',$allCategories);
 
     }
     function create(){
@@ -26,7 +26,7 @@ class BookCtrl extends Controller{
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
             $book = $this->getBody();
             $book->save();
-            $this->redirect('/categories');
+            $this->redirect('/books');
         }
     }
     function update($params=[]){
@@ -38,13 +38,13 @@ class BookCtrl extends Controller{
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
             $book = $this->getBody();
             $book->update($_POST['id']);
-            $this->redirect('/categories');
+            $this->redirect('/books');
         }
     }
     public function delete_or_recovery($params=[]){
         $book=new BookModel();
         print_r($book->remove_or_recovery($params['id']));
-        $this->redirect('/categories');
+        $this->redirect('/books');
     }
     public static function uploadFile(array $imageFile): string
     {
