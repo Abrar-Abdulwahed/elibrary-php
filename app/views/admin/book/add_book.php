@@ -61,10 +61,6 @@ include_once $URLROOT.'/includes/head.php' ?>
                 </ul>
               </li>
               <!--/ Language -->
-
-
-              
-
               <!-- Style Switcher -->
               <li class="nav-item me-2 me-xl-0">
                 <a class="nav-link style-switcher-toggle hide-arrow" href="javascript:void(0);">
@@ -437,8 +433,7 @@ include_once $URLROOT.'/includes/head.php' ?>
             <!-- Multi Column with Form Separator -->
             <div class="card mb-4">
               <h5 class="card-header">إدخال كتاب جديد</h5>
-              <form class="card-body" action="/add_category" method="POST" enctype="multipart/form-data">
-                
+              <form class="card-body" action="/add_category" method="POST" enctype="multipart/form-data"> 
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="multicol-username">اسم الكتاب</label>
