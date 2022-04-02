@@ -126,7 +126,7 @@
       </li>
       <li class="menu-item">
         <a href="/books" class="menu-link">
-          <div data-i18n="عرض الاقسام">عرض الاقسام</div>
+          <div data-i18n="عرض الكتب"> عرض الكتب </div>
         </a>
       </li>
     </ul>
