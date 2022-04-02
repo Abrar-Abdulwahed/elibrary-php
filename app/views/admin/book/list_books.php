@@ -469,10 +469,10 @@
                           <?php } ?>
                         </td>
                         <td>
-                          <a href="/update_category/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
+                          <a href="/update_book/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
                               <i class="tf-icons bx bx-edit-alt me-1"></i>
                           </a>
-                          <form action="/delete_or_recovery_category/<?=  $category['id']; ?>" method="POST" style="display: inline-block;">
+                          <form action="/delete_or_recovery_book/<?=  $category['id']; ?>" method="POST" style="display: inline-block;">
                             <button type="submit" class="btn btn-icon btn-outline-dribbble">
                             <?php if($category['is_active']==1) {?>    
                                 <i class="tf-icons bx bx-trash me-1"></i>

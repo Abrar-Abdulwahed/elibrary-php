@@ -437,7 +437,7 @@ include_once $URLROOT.'/includes/head.php' ?>
             <!-- Multi Column with Form Separator -->
             <div class="card mb-4">
               <h5 class="card-header">إنشاء كتاب جديد</h5>
-              <form class="card-body" action="/update_category" method="POST" enctype="multipart/form-data">
+              <form class="card-body" action="/update_book" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?php echo $params->id ?>">
                 <div class="row g-3">
                   <div class="col-md-6">
