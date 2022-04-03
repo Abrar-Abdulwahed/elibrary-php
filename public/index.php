@@ -37,6 +37,14 @@ Router::get('/admin', 'admin/home');
 // Router::get('/admin/add_category', 'dashboard/home');
 // Router::get('/admin/categories', 'dashboard/home');
 
+/* ====================== Author Routes ====================== */
+Router::get('/authors',[AuthorCtrl::class,'listAll']);
+Router::get('/add_author',[AuthorCtrl::class,'create']);
+Router::post('/add_author',[CategoryCtrl::class,'create']);
+Router::get('/update_author/{id}',[AuthorCtrl::class,'update']);
+Router::post('/update_author',[AuthorCtrl::class,'update']);
+Router::post('/delete_or_recovery_author/{id}',[AuthorCtrl::class,'delete_or_recovery']);
+
 /* ====================== Category Routes ====================== */
 Router::get('/categories',[CategoryCtrl::class,'listAll']);
 Router::get('/add_category',[CategoryCtrl::class,'create']);
