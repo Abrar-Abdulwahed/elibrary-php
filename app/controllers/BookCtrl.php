@@ -17,7 +17,6 @@ class BookCtrl extends Controller{
         $book->category_id  = $_POST['book_category'];
         $book->format       = $_POST['book_format'];
         $book->quantity     = $_POST['book_quantity'];
-        $book->quantity     = $_POST['book_quantity'];
         $book->is_active    = $_POST['is_active'];
         $book->created_by   = 1;
         date_default_timezone_set('Africa/Nairobi');
@@ -34,8 +33,8 @@ class BookCtrl extends Controller{
     function create(){
         if($_SERVER['REQUEST_METHOD'] === "GET"){
             $category      = new CategoryModel();
-            $allCategoires = $categories->getAll();
-            $data          = array('books'=>$allbooks,'categories'=>$allCategoires);
+            $allCategoires = $category->getAll();
+            $data          = array('categories' => $allCategoires);
             $this->view('admin/book/add_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){

@@ -416,12 +416,8 @@
                 </ul>
               </li>
               <!--/ User -->
-
-
             </ul>
           </div>
-
-
           <!-- Search Small Screens -->
           <div class="navbar-search-wrapper search-input-wrapper  d-none">
             <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search...">
@@ -451,12 +447,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                  
-                    
                     <?php foreach($params as $book){?>
-                      <tr>
-                        
-                        <td><?= $book['name'];?></td>
+                      <tr>        
+                        <td><?= $book['title'];?></td>
                         <td>
                           <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= book['image'];?>">
                         </td>
