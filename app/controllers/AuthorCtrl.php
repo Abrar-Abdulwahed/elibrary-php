@@ -6,18 +6,21 @@ use elibrary\app\models\AuthorModel;
 
 class AuthorCtrl extends Controller{
     public function getBody(){
-        $author = new AuthorModel();  
-        $author->name=$_POST['author_name'];
-        $imageName=$this->uploadFile($_FILES['image']);
-        $author->image=$imageName!=null?$imageName:"default.png";
-        $author->created_by=1;
-        $author->is_active=$_POST['is_active'];
+        $author             = new AuthorModel();  
+        $author->name       = $_POST['author_name'];
+        $author->bio        = $_POST['author_bio'];
+        $author->email      = $_POST['author_email'];
+        $author->phone      = $_POST['author_phone'];
+        $author->created_by = 1;
+        $author->is_active  = $_POST['is_active'];
+        $author->created_at = $_POST['is_active'];
+        $author->updated_at = $_POST['is_active'];
         return $author;
     }
     function listAll($parameters=null){
-        $categories=new AuthorModel();
-        $allCategories=$categories->getAll();
-        $this->view('admin/author/list_categories',$allCategories);
+        $authors=new AuthorModel();
+        $allauthors=$authors->getAll();
+        $this->view('admin/author/list_authors',$allauthors);
 
     }
     function create(){
@@ -26,7 +29,7 @@ class AuthorCtrl extends Controller{
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
             $author = $this->getBody();
             $author->save();
-            $this->redirect('/categories');
+            $this->redirect('/authors');
         }
     }
     function update($params=[]){
@@ -38,29 +41,12 @@ class AuthorCtrl extends Controller{
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
             $author = $this->getBody();
             $author->update($_POST['id']);
-            $this->redirect('/categories');
+            $this->redirect('/authors');
         }
     }
     public function delete_or_recovery($params=[]){
         $author=new AuthorModel();
         $author->remove_or_recovery($params['id']);
-        $this->redirect('/categories');
-    }
-    public static function uploadFile(array $imageFile): string
-    {
-        // check images direction
-        if (!is_dir(__DIR__ . '/../../public/images')) {
-            mkdir(__DIR__ . '/../../public/images');
-        }
-
-        if ($imageFile && $imageFile['tmp_name']) {
-            $image = explode('.', $imageFile['name']);
-            $imageExtension = end($image);
-            $imageName = uniqid(). "." . $imageExtension;
-            $imagePath =  __DIR__ . '/../../public/images/' . $imageName;
-            move_uploaded_file($imageFile['tmp_name'], $imagePath);
-            return $imageName;
-        }
-        return null;
+        $this->redirect('/authors');
     }
 }

@@ -138,12 +138,12 @@
     </a>
     <ul class="menu-sub">
       <li class="menu-item">
-        <a href="/add_book" class="menu-link">
+        <a href="/add_author" class="menu-link">
           <div data-i18n="إضافة مؤلف">إضافة مؤلف</div>
         </a>
       </li>
       <li class="menu-item">
-        <a href="/books" class="menu-link">
+        <a href="/authors" class="menu-link">
           <div data-i18n="عرض المؤلفين">عرض المؤلفين</div>
         </a>
       </li>

@@ -3,6 +3,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use elibrary\app\controllers\SiteCtrl;
 use elibrary\app\controllers\UserCtrl;
+use elibrary\app\controllers\AuthorCtrl;
 use elibrary\app\controllers\CategoryCtrl;
 use elibrary\app\controllers\BookCtrl;
 use elibrary\app\core\Application;
@@ -40,7 +41,7 @@ Router::get('/admin', 'admin/home');
 /* ====================== Author Routes ====================== */
 Router::get('/authors',[AuthorCtrl::class,'listAll']);
 Router::get('/add_author',[AuthorCtrl::class,'create']);
-Router::post('/add_author',[CategoryCtrl::class,'create']);
+Router::post('/add_author',[AuthorCtrl::class,'create']);
 Router::get('/update_author/{id}',[AuthorCtrl::class,'update']);
 Router::post('/update_author',[AuthorCtrl::class,'update']);
 Router::post('/delete_or_recovery_author/{id}',[AuthorCtrl::class,'delete_or_recovery']);
