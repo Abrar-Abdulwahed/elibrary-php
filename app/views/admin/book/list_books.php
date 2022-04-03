@@ -441,18 +441,27 @@
                       <tr>
                         <th>اسم الكتاب</th>
                         <th>الصورة</th>
+                        <th>وصف الكتاب</th>
+                        <th>السعر</th>
+                        <th>عدد الصفحات</th>
+                        <th>الصيغة</th>
+                        <th>الكمية</th>
                         <th>الحالة</th>
-                        
                         <th>العمليات</th>
                       </tr>
                     </thead>
                     <tbody>
                     <?php foreach($params as $book){?>
                       <tr>        
-                        <td><?= $book['title'];?></td>
+                        <td><?= $book['title'];?></td>       
                         <td>
-                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= book['image'];?>">
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $book['image'];?>">
                         </td>
+                        <td><?= $book['description'];?></td>
+                        <td><?= $book['price'];?></td>
+                        <td><?= $book['pages_number'];?></td>
+                        <td><?= $book['format'];?></td>
+                        <td><?= $book['quantity'];?></td>
                         <td>
                           <?php if($book['is_active'] == 1) {?>    
                           <span class="badge bg-label-success me-1">مفعل</span>

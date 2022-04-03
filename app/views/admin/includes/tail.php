@@ -19,19 +19,19 @@
   <script src="/dashboard_assets/vendor/libs/flatpickr/flatpickr.js"></script>
   <script src="/dashboard_assets/vendor/libs/select2/select2.js"></script>
 
-    <!-- Vendors JS
+    <!-- Vendors JS -->
     <script src="/dashboard_assets/vendor/libs/select2/select2.js"></script>
     <script src="/dashboard_assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
     <script src="/dashboard_assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
     <script src="/dashboard_assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
     <script src="/dashboard_assets/vendor/libs/cleavejs/cleave.js"></script>
     <script src="/dashboard_assets/vendor/libs/cleavejs/cleave-phone.js"></script>
-    <script src="/dashboard_assets/vendor/libs/sweetalert2/sweetalert2.js"></script> -->
+    <script src="/dashboard_assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
 
 
   <!-- Main JS -->
   <script src="/dashboard_assets/js/main.js"></script>
-
+  <!-- Page JS -->
   <!-- Page JS -->
   <script src="/dashboard_assets/js/pages-account-settings-account.js"></script>
   
