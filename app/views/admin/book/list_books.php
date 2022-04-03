@@ -442,6 +442,8 @@
                         <th>اسم الكتاب</th>
                         <th>الصورة</th>
                         <th>وصف الكتاب</th>
+                        <th>المؤلف</th>
+                        <th>الناشر</th>
                         <th>السعر</th>
                         <th>عدد الصفحات</th>
                         <th>الصيغة</th>
@@ -458,6 +460,8 @@
                           <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $book['image'];?>">
                         </td>
                         <td><?= $book['description'];?></td>
+                        <td>Author</td>
+                        <td>Publisher</td>
                         <td><?= $book['price'];?></td>
                         <td><?= $book['pages_number'];?></td>
                         <td><?= $book['format'];?></td>

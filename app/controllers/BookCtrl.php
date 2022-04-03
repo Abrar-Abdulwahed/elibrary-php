@@ -45,9 +45,12 @@ class BookCtrl extends Controller{
     }
     function update($params=[]){
         if($_SERVER['REQUEST_METHOD'] === "GET"){
-            $cat=new BookModel();
-            $result=$cat->getSingleRow($params['id']);
-            $this->view('admin/book/update_book',$result);
+            $book           = new BookModel();
+            $selectedBook   = $book->getSingleRow($params['id']);
+            $category       = new CategoryModel();
+            $allCategoires  = $category->getAll();
+            $data          = array('categories' => $allCategoires, 'book' => $selectedBook);
+            $this->view('admin/book/update_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
             $book = $this->getBody();
@@ -57,7 +60,7 @@ class BookCtrl extends Controller{
     }
     public function delete_or_recovery($params=[]){
         $book=new BookModel();
-        print_r($book->remove_or_recovery($params['id']));
+        $book->remove_or_recovery($params['id']);
         $this->redirect('/books');
     }
     public static function uploadFile(array $imageFile): string{
