@@ -121,12 +121,30 @@
     <ul class="menu-sub">
       <li class="menu-item">
         <a href="/add_book" class="menu-link">
-          <div data-i18n="إضافة كتاب">عرض الكتب</div>
+          <div data-i18n="إضافة كتاب">إضافة كتاب</div>
         </a>
       </li>
       <li class="menu-item">
         <a href="/books" class="menu-link">
           <div data-i18n="عرض الكتب"> عرض الكتب </div>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="المؤلف"> المؤلف</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="/add_book" class="menu-link">
+          <div data-i18n="إضافة مؤلف">إضافة مؤلف</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/books" class="menu-link">
+          <div data-i18n="عرض المؤلفين">عرض المؤلفين</div>
         </a>
       </li>
     </ul>
