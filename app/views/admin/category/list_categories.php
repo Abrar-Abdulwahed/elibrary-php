@@ -4,46 +4,18 @@
   <div class="layout-wrapper layout-content-navbar  ">
     <div class="layout-container">
       <!-- Menu -->
-
       <?php include_once dirname(__FILE__).'/../includes/aside.php' ?>
       <!-- / Menu -->
-
-
-
       <!-- Layout container -->
       <div class="layout-page">
-
-
-
-
-
         <!-- Navbar -->
-
-
-
-
         <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
-
-
-
-
-
-
-
-
-
-
-
           <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
             <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
               <i class="bx bx-menu bx-sm"></i>
             </a>
           </div>
-
-
           <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-
-
             <!-- Search -->
             <div class="navbar-nav align-items-center">
               <div class="nav-item navbar-search-wrapper mb-0">
@@ -54,13 +26,7 @@
               </div>
             </div>
             <!-- /Search -->
-
-
-
-
-
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-
               <!-- Language -->
               <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -94,10 +60,6 @@
                 </ul>
               </li>
               <!--/ Language -->
-
-
-
-
               <!-- Style Switcher -->
               <li class="nav-item me-2 me-xl-0">
                 <a class="nav-link style-switcher-toggle hide-arrow" href="javascript:void(0);">
@@ -105,7 +67,6 @@
                 </a>
               </li>
               <!--/ Style Switcher -->
-
               <!-- Quick links  -->
               <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -455,97 +416,73 @@
                 </ul>
               </li>
               <!--/ User -->
-
-
             </ul>
           </div>
-
-
           <!-- Search Small Screens -->
           <div class="navbar-search-wrapper search-input-wrapper  d-none">
             <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search...">
             <i class="bx bx-x bx-sm search-toggler cursor-pointer"></i>
           </div>
-
-
         </nav>
-
-
-
         <!-- / Navbar -->
-
-
-
         <!-- Content wrapper -->
         <div class="content-wrapper">
-
           <!-- Content -->
-
           <div class="container-xxl flex-grow-1 container-p-y">
-
-
             <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الأقسام/</span> عرض الأقسام</h4>
-
-           
-
-
             <!-- Multi Column with Form Separator -->
             <!-- Bordered Table -->
-<div class="card">
-  <h5 class="card-header">Bordered Table</h5>
-  <div class="card-body">
-    <div class="table-responsive text-nowrap">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>اسم القسم</th>
-            <th>الصورة</th>
-            <th>الحالة</th>
-            
-            <th>العمليات</th>
-          </tr>
-        </thead>
-        <tbody>
-       
-         
-         <?php foreach($params as $category){?>
-          <tr>
-            
-            <td><?= $category['name'];?></td>
-            <td>
-              <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $category['image'];?>">
-            </td>
-            <td>
-              <?php if($category['is_active']==1) {?>    
-              <span class="badge bg-label-success me-1">مفعل</span>
-              <?php }
-              else {?>
-              <span class="badge bg-label-danger me-1">موقف</span>
-              <?php } ?>
-            </td>
-            <td>
-              <a href="/update_category/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
-                  <i class="tf-icons bx bx-edit-alt me-1"></i>
-              </a>
-              <form action="/delete_or_recovery_category/<?=  $category['id']; ?>" method="POST" style="display: inline-block;">
-                <button type="submit" class="btn btn-icon btn-outline-dribbble">
-                <?php if($category['is_active']==1) {?>    
-                    <i class="tf-icons bx bx-trash me-1"></i>
-                <?php }
-                else {?>
-                    <i class="tf-icons bx bx-refresh me-1"></i>
-                <?php } ?>
-                </button> 
-              </form> 
-            </td>
-          </tr>
-          <?php } ?>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-<!--/ Bordered Table -->
+            <div class="card">
+              <h5 class="card-header">Category Table</h5>
+              <div class="card-body">
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>اسم القسم</th>
+                        <th>الصورة</th>
+                        <th>الحالة</th>
+                        <th>العمليات</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach($params as $category){?>
+                      <tr> 
+                        <td><?= $category['name'];?></td>
+                        <td>
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $category['image'];?>">
+                        </td>
+                        <td>
+                          <?php if($category['is_active']==1) {?>    
+                          <span class="badge bg-label-success me-1">مفعل</span>
+                          <?php }
+                          else {?>
+                          <span class="badge bg-label-danger me-1">موقف</span>
+                          <?php } ?>
+                        </td>
+                        <td>
+                          <a href="/update_category/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
+                              <i class="tf-icons bx bx-edit-alt me-1"></i>
+                          </a>
+                          <form action="/delete_or_recovery_category/<?=  $category['id']; ?>" method="POST" style="display: inline-block;">
+                            <button type="submit" class="btn btn-icon btn-outline-dribbble">
+                            <?php if($category['is_active']==1) {?>    
+                                <i class="tf-icons bx bx-trash me-1"></i>
+                            <?php }
+                            else {?>
+                                <i class="tf-icons bx bx-refresh me-1"></i>
+                            <?php } ?>
+                            </button> 
+                          </form> 
+                        </td>
+                      </tr>
+                      <?php } ?>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!--/ Bordered Table -->
           </div>
           <!-- / Content -->
           <?php include_once dirname(__FILE__).'/../includes/footer.php' ?>
@@ -555,13 +492,10 @@
       </div>
       <!-- / Layout page -->
     </div>
-
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
-
     <!-- Drag Target Area To SlideIn Menu On Small Screens -->
     <div class="drag-target"></div>
-
   </div>
   <!-- / Layout wrapper -->
 
