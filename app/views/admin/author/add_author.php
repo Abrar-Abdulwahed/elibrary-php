@@ -433,15 +433,15 @@ include_once $URLROOT.'/includes/head.php' ?>
             <!-- Multi Column with Form Separator -->
             <div class="card mb-4">
               <h5 class="card-header">إدخال كتاب جديد</h5>
-              <form class="card-body" action="/add_book" method="POST" enctype="multipart/form-data"> 
+              <form class="card-body" action="/add_author" method="POST" enctype="multipart/form-data"> 
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label" for="multicol-book-title">اسم الكتاب</label>
-                    <input name="book_title" type="text" id="multicol-book-title" class="form-control" placeholder="ex. Fundamental C++ Programming" />
+                    <label class="form-label" for="multicol-author-name">اسم المؤلف</label>
+                    <input name="author_name" type="text" id="multicol-author-name" class="form-control" placeholder="مثال: أبو حامد الغزالي" />
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label" for="book-description">وصف الكتاب</label>
-                    <textarea class="form-control" name="book_description" id="book-description" cols="3" rows="8"></textarea>
+                    <label class="form-label" for="author-bio">نبذة عن المؤلف</label>
+                    <textarea class="form-control" name="author_bio" id="author-bio" cols="3" rows="8"></textarea>
                   </div>
                   <div class="col-md-3">
                     <label class="form-label" for="multicol-email">صورة الكتاب</label>
@@ -450,33 +450,12 @@ include_once $URLROOT.'/includes/head.php' ?>
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <label class="form-label" for="multicol-book-price">سعر الكتاب</label>
-                    <input name="book_price" type="number" id="multicol-book-price" class="form-control" placeholder="YR" />
+                    <label class="form-label" for="multicol-author-email">البريد الإلكتروني للمؤلف</label>
+                    <input name="author_email" type="email" id="multicol-author-email" class="form-control" placeholder="example@gmail.com" />
                   </div>
                   <div class="col-md-3">
-                    <label class="form-label" for="multicol-book-pages">عدد صفحات الكتاب</label>
-                    <input name="book_pages_number" type="number" id="multicol-book-pages" class="form-control" />
-                  </div>
-                  <div class="mb-3 col-md-3" data-select2-id="48">
-                    <label for="categories" class="form-label">القسم</label>
-                    <div class="position-relative" data-select2-id="47">
-                      <select name="book_category" id="categories" class="select2 form-select select2-hidden-accessible" data-select2-id="categories" tabindex="-1" aria-hidden="true">
-                        <option disabled selected>اختر قسم</option>
-                        <?php foreach ($params['categories'] as $category){ ?>
-                          <option value="<?= $category['id'] ?>">
-                                <?= $category['name'] ?>
-                          </option>
-                        <?php } ?>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <label class="form-label" for="multicol-book-format">صيغة الكتاب</label>
-                    <input name="book_format" type="text" id="multicol-book-format" class="form-control" placeholder="مثال: كتاب مطبوع أو pdf" />
-                  </div>
-                  <div class="col-md-3">
-                    <label class="form-label" for="multicol-book-quantity">كمية الكتاب</label>
-                    <input name="book_quantity" type="number" id="multicol-book-quantity" class="form-control" placeholder="ex. 10" />
+                    <label class="form-label" for="multicol-author-phone">رقم التواصل مع المؤلف</label>
+                    <input name="author-phone" type="text" id="multicol-author-phone" class="form-control"  placeholder="(+967)-736565237" />
                   </div>
                   <div class="col-md-6">
                     <div class="form-password-toggle">
