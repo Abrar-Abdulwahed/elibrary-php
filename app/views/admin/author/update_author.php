@@ -457,12 +457,22 @@ include_once $URLROOT.'/includes/head.php' ?>
                       <label class="form-label" for="multicol-confirm-password">تفعيل المؤلف</label>
                       <div class="input-group input-group-merge">
                       <label class="switch">
-                          <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
+                      <?php if($params->is_active == 1) {?>    
+                          <input name="is_active" value="0" type="checkbox" checked class="switch-input" />
                           <span class="switch-toggle-slider">
                             <span class="switch-on"></span>
                             <span class="switch-off"></span>
                           </span>
-                          <span class="switch-label">is active</span>
+                          <span class="switch-label">active</span>
+                      <?php }
+                      else {?>
+                          <input name="is_active" value="1" type="checkbox" class="switch-input" />
+                          <span class="switch-toggle-slider">
+                            <span class="switch-on"></span>
+                            <span class="switch-off"></span>
+                          </span>
+                          <span class="switch-label">non-active</span>
+                      <?php } ?>
                         </label>
                       </div>
                     </div>
