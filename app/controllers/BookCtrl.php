@@ -2,6 +2,7 @@
 namespace elibrary\app\controllers;
 
 use elibrary\app\core\Application;
+use elibrary\app\models\CategoryModel;
 use elibrary\app\models\BookModel;
 
 class BookCtrl extends Controller{
@@ -31,8 +32,12 @@ class BookCtrl extends Controller{
 
     }
     function create(){
-        if($_SERVER['REQUEST_METHOD'] === "GET")
-            $this->view('admin/book/add_book');
+        if($_SERVER['REQUEST_METHOD'] === "GET"){
+            $category      = new CategoryModel();
+            $allCategoires = $categories->getAll();
+            $data          = array('books'=>$allbooks,'categories'=>$allCategoires);
+            $this->view('admin/book/add_book', $data);
+        }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
             $book = $this->getBody();
             $book->save();
