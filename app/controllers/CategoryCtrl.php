@@ -43,7 +43,7 @@ class CategoryCtrl extends Controller{
     }
     public function delete_or_recovery($params=[]){
         $category=new CategoryModel();
-        print_r($category->remove_or_recovery($params['id']));
+        $category->remove_or_recovery($params['id']);
         $this->redirect('/categories');
     }
     public static function uploadFile(array $imageFile): string
@@ -56,15 +56,11 @@ class CategoryCtrl extends Controller{
         if ($imageFile && $imageFile['tmp_name']) {
             $image = explode('.', $imageFile['name']);
             $imageExtension = end($image);
-
             $imageName = uniqid(). "." . $imageExtension;
             $imagePath =  __DIR__ . '/../../public/images/' . $imageName;
-
             move_uploaded_file($imageFile['tmp_name'], $imagePath);
-
             return $imageName;
         }
-
         return null;
     }
 }
