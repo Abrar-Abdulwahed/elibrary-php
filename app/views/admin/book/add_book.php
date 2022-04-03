@@ -437,12 +437,21 @@ include_once $URLROOT.'/includes/head.php' ?>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="multicol-username">اسم الكتاب</label>
-                    <input name="book_name" type="text" id="multicol-username" class="form-control" placeholder="ex. Fundamental C++ Programming" />
+                    <input name="book_title" type="text" id="multicol-username" class="form-control" placeholder="ex. Fundamental C++ Programming" />
                   </div>
                   <div class="col-md-6">
                     <label class="form-label" for="multicol-email">صورة الكتاب</label>
                     <div class="input-group input-group-merge">
                       <input  name="image" type="file"  class="form-control"  aria-describedby="multicol-email2" />    
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6" data-select2-id="48">
+                    <label for="categories" class="form-label">القسم</label>
+                    <div class="position-relative" data-select2-id="47">
+                      <select id="categories" class="select2 form-select select2-hidden-accessible" data-select2-id="categories" tabindex="-1" aria-hidden="true">
+                        <option value="" data-select2-id="6">اختر قسم</option>
+                        <option value="test" data-select2-id="49">Test</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-md-6">

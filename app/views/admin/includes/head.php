@@ -48,7 +48,15 @@
     <link rel="stylesheet" href="/dashboard_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="/dashboard_assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="/dashboard_assets/vendor/libs/flatpickr/flatpickr.css" />
-<link rel="stylesheet" href="/dashboard_assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/select2/select2.css" />
+    
+    <!-- Vendors CSS
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/animate-css/animate.css" />
+    <link rel="stylesheet" href="/dashboard_assets/vendor/libs/sweetalert2/sweetalert2.css" /> -->
 
     <!-- Page CSS -->
     

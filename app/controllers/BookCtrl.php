@@ -6,12 +6,22 @@ use elibrary\app\models\BookModel;
 
 class BookCtrl extends Controller{
     public function getBody(){
-        $book = new BookModel();  
-        $book->name=$_POST['book_name'];
-        $imageName=$this->uploadFile($_FILES['image']);
-        $book->image=$imageName!=null?$imageName:"default.png";
-        $book->created_by=1;
-        $book->is_active=$_POST['is_active'];
+        $book               = new BookModel();  
+        $book->title        = $_POST['book_title'];
+        $imageName          = $this->uploadFile($_FILES['image']);
+        $book->image        = $imageName!=null?$imageName:"default.png";
+        $book->price        = $_POST['book_price'];
+        $book->description  = $_POST['book_description'];
+        $book->pages_number = $_POST['book_pages_number'];
+        $book->category_id  = $_POST['book_category'];
+        $book->format       = $_POST['book_format'];
+        $book->quantity     = $_POST['book_quantity'];
+        $book->quantity     = $_POST['book_quantity'];
+        $book->is_active    = $_POST['is_active'];
+        $book->created_by   = 1;
+        date_default_timezone_set('Africa/Nairobi');
+        $book->created_at   = date("d/m/Y H:i:s") ;
+        $book->updated_at   = date("d/m/Y H:i:s") ;
         return $book;
     }
     function listAll($parameters=null){
