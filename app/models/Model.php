@@ -19,7 +19,7 @@ class Model{
         $values=implode(",",$values);
         $columns=implode(",",$columns);
         $sql_query="insert into ".self::$tblName." (".$columns." ) values (".$values.")";
-   
+        print_r($sql_query);
         $stmt=Application::$app->database->pdo->prepare($sql_query);
         if($stmt->execute())
             return true;
@@ -36,19 +36,18 @@ class Model{
 
     public function getSingleRow($id){
         $sql_query="select * from ".self::$tblName." where id=".$id."";
-         $stmt=Application::$app->database->pdo->prepare($sql_query);
+        $stmt=Application::$app->database->pdo->prepare($sql_query);
         $stmt->execute();
         return $stmt->fetchObject();
     }
 
-    public function update($id):bool{
+    public function update($id){
         $set=array();
         foreach(get_object_vars($this) as $key=> $property){
             $set[] = $key.'='."'".$property."'";
         }
         $set=implode(",",$set);
         $sql_query="update ".self::$tblName." set ".$set." where ID = ".$id.";";
-   
         $stmt=Application::$app->database->pdo->prepare($sql_query);
         if($stmt->execute())
             return true;
