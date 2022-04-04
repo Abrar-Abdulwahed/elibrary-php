@@ -48,7 +48,7 @@ Router::post('/update_author',[AuthorCtrl::class,'update']);
 Router::post('/delete_or_recovery_author/{id}',[AuthorCtrl::class,'delete_or_recovery']);
 
 /* ====================== Publisher Routes ====================== */
-Router::get('/authors',[PublisherCtrl::class,'listAll']);
+Router::get('/publishers',[PublisherCtrl::class,'listAll']);
 Router::get('/add_publisher',[PublisherCtrl::class,'create']);
 Router::post('/add_publisher',[PublisherCtrl::class,'create']);
 Router::get('/update_publisher/{id}',[PublisherCtrl::class,'update']);
