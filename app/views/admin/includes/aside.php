@@ -149,6 +149,24 @@
       </li>
     </ul>
   </li>
+  <li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-upload"></i>
+      <div data-i18n="دار النشر">دار النشر</div>
+    </a>
+    <ul class="menu-sub">
+      <li class="menu-item">
+        <a href="/add_author" class="menu-link">
+          <div data-i18n="إضافة دار نشر">إضافة دار نشر</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/authors" class="menu-link">
+          <div data-i18n="عرض دور النشر">عرض دور النشر</div>
+        </a>
+      </li>
+    </ul>
+  </li>
 </aside>
 <!-- / Menu -->
 
