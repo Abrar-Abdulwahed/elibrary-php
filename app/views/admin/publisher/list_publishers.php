@@ -439,11 +439,14 @@
                   <table class="table table-bordered">
                     <thead>
                       <tr>
-                        <th>اسم المؤلف</th>
-                        <th>وصف المؤلف</th>
+                        <th>اسم دور النشر</th>
                         <th>البريد الإلكتروني</th>
-                        <th>رقم الهاتف</th>
-                        <th>تاريخ الإنشاء</th>
+                        <th>الصورة</th>
+                        <th>الرقم الأول</th>
+                        <th>الرقم الثاني</th>
+                        <th>الفاكس</th>
+                        <th>البلد</th>
+                        <th>العنوان</th>
                         <th>بواسطة</th>
                         <th>تاريخ التعديل</th>
                         <th>الحالة</th>
@@ -451,17 +454,23 @@
                       </tr>
                     </thead>
                     <tbody>
-                    <?php foreach($params as $author){?>
+                    <?php foreach($params as $publisher){?>
                       <tr>        
-                        <td><?= $author['name'] ?></td>       
-                        <td><?= $author['bio'] ?></td>
-                        <td><?= $author['email'] ?></td>
-                        <td><?= $author['phone'] ?></td>
-                        <td><?= $author['created_at'] ?></td>
-                        <td><?= $author['created_by'];?></td>
-                        <td><?= $author['updated_at'];?></td>
+                        <td><?= $publisher['name'] ?></td>       
+                        <td><?= $publisher['email'] ?></td>
                         <td>
-                          <?php if($author['is_active'] == 1) {?>    
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $publisher['image'];?>">
+                        </td>
+                        <td><?= $publisher['phone'] ?></td>
+                        <td><?= $publisher['alt_phone'] ?></td>
+                        <td><?= $publisher['fax'] ?></td>
+                        <td><?= $publisher['country'] ?></td>
+                        <td><?= $publisher['address'] ?></td>
+                        <td><?= $publisher['created_at'] ?></td>
+                        <td><?= $publisher['created_by'];?></td>
+                        <td><?= $publisher['updated_at'];?></td>
+                        <td>
+                          <?php if($publisher['is_active'] == 1) {?>    
                           <span class="badge bg-label-success me-1">مفعل</span>
                           <?php }
                           else {?>
@@ -469,12 +478,12 @@
                           <?php } ?>
                         </td>
                         <td>
-                          <a href="/update_author/<?php echo $author['id'];?>" class="btn btn-icon btn-outline-dribbble">
+                          <a href="/update_publisher/<?php echo $publisher['id'];?>" class="btn btn-icon btn-outline-dribbble">
                               <i class="tf-icons bx bx-edit-alt me-1"></i>
                           </a>
-                          <form action="/delete_or_recovery_author/<?=  $author['id']; ?>" method="POST" style="display: inline-block;">
+                          <form action="/delete_or_recovery_publisher/<?=  $publisher['id']; ?>" method="POST" style="display: inline-block;">
                             <button type="submit" class="btn btn-icon btn-outline-dribbble">
-                            <?php if($author['is_active']==1) {?>    
+                            <?php if($publisher['is_active']==1) {?>    
                                 <i class="tf-icons bx bx-trash me-1"></i>
                             <?php }
                             else {?>
