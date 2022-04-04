@@ -8,9 +8,14 @@ class PublisherCtrl extends Controller{
     public function getBody($op){
         $publisher             = new PublisherModel();  
         $publisher->name       = $_POST['publisher_name'];
-        $publisher->bio        = $_POST['publisher_bio'];
         $publisher->email      = $_POST['publisher_email'];
+        $imageName             = $this->uploadFile($_FILES['image']);
+        $publisher->image      = $imageName != null? $imageName:"default.png";
         $publisher->phone      = $_POST['publisher_phone'];
+        $publisher->alt_phone  = $_POST['publisher_alt_phone'];
+        $publisher->fax        = $_POST['publisher_fax'];
+        $publisher->country    = $_POST['publisher_country'];
+        $publisher->address    = $_POST['publisher_address'];
         $publisher->created_by = 1;
         $publisher->is_active  = $_POST['is_active'];
         date_default_timezone_set('Africa/Nairobi');
@@ -53,5 +58,20 @@ class PublisherCtrl extends Controller{
         $publisher=new PublisherModel();
         $publisher->remove_or_recovery($params['id']);
         $this->redirect('/publishers');
+    }
+    public static function uploadFile(array $imageFile): string{
+        // check images direction
+        if (!is_dir(__DIR__ . '/../../public/images')) {
+            mkdir(__DIR__ . '/../../public/images');
+        }
+        if ($imageFile && $imageFile['tmp_name']) {
+            $image = explode('.', $imageFile['name']);
+            $imageExtension = end($image);
+            $imageName = uniqid(). "." . $imageExtension;
+            $imagePath =  __DIR__ . '/../../public/images/' . $imageName;
+            move_uploaded_file($imageFile['tmp_name'], $imagePath);
+            return $imageName;
+        }
+        return null;
     }
 }

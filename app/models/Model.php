@@ -5,7 +5,7 @@ use elibrary\app\core\Application;
 
 
 class Model{
-    public static  $tblName;
+    public static $tblName;
     function save():bool{  
         $values=array();
         $columns=array();
