@@ -429,11 +429,11 @@
         <div class="content-wrapper">
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الكتب/</span> عرض الكتب</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الكتب/</span>عرض دور النشر</h4>
             <!-- Multi Column with Form Separator -->
             <!-- Bordered Table -->
             <div class="card">
-              <h5 class="card-header">جدول المؤلفين</h5>
+              <h5 class="card-header">جدول دور النشر</h5>
               <div class="card-body">
                 <div class="table-responsive text-nowrap">
                   <table class="table table-bordered">
