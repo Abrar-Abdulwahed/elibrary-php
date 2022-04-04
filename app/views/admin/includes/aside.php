@@ -156,12 +156,12 @@
     </a>
     <ul class="menu-sub">
       <li class="menu-item">
-        <a href="/add_author" class="menu-link">
+        <a href="/add_publisher" class="menu-link">
           <div data-i18n="إضافة دار نشر">إضافة دار نشر</div>
         </a>
       </li>
       <li class="menu-item">
-        <a href="/authors" class="menu-link">
+        <a href="/publishers" class="menu-link">
           <div data-i18n="عرض دور النشر">عرض دور النشر</div>
         </a>
       </li>
