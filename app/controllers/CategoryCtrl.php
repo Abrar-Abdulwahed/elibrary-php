@@ -28,6 +28,7 @@ class CategoryCtrl extends Controller{
 
     }
     function create(){
+        echo 'ldkjflskjdfls';
         if($_SERVER['REQUEST_METHOD'] === "GET")
             $this->view('admin/category/add_category');
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
