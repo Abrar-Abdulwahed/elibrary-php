@@ -53,18 +53,17 @@ class CategoryCtrl extends Controller{
         $category->remove_or_recovery($params['id']);
         $this->redirect('/categories');
     }
-    public static function uploadFile(array $imageFile): string
-    {
+    public static function uploadFile(array $imageFile): string{
         // check images direction
-        if (!is_dir(__DIR__ . '/../../public/images')) {
-            mkdir(__DIR__ . '/../../public/images');
+        if (!is_dir(__DIR__ . '/../../public/images/category')) {
+            mkdir(__DIR__ . '/../../public/images/category');
         }
 
         if ($imageFile && $imageFile['tmp_name']) {
             $image = explode('.', $imageFile['name']);
             $imageExtension = end($image);
             $imageName = uniqid(). "." . $imageExtension;
-            $imagePath =  __DIR__ . '/../../public/images/' . $imageName;
+            $imagePath =  __DIR__ . '/../../public/images/category/' . $imageName;
             move_uploaded_file($imageFile['tmp_name'], $imagePath);
             return $imageName;
         }
