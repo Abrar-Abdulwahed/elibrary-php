@@ -19,7 +19,6 @@ class Model{
         $values=implode(",",$values);
         $columns=implode(",",$columns);
         $sql_query="insert into ".self::$tblName." (".$columns." ) values (".$values.")";
-        print_r($sql_query);
         $stmt=Application::$app->database->pdo->prepare($sql_query);
         if($stmt->execute())
             return true;
