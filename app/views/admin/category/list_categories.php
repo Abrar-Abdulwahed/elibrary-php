@@ -450,7 +450,7 @@
                       <tr> 
                         <td><?= $category['name'];?></td>
                         <td>
-                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $category['image'];?>">
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/category/<?= $category['image'];?>">
                         </td>
                         <td>
                           <?php if($category['is_active']==1) {?>    
