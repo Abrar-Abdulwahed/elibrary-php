@@ -68,7 +68,7 @@ class PublisherCtrl extends Controller{
             $image = explode('.', $imageFile['name']);
             $imageExtension = end($image);
             $imageName = uniqid(). "." . $imageExtension;
-            $imagePath =  __DIR__ . '/../../public/images/publishers' . $imageName;
+            $imagePath =  __DIR__ . '/../../public/images/publishers/' . $imageName;
             move_uploaded_file($imageFile['tmp_name'], $imagePath);
             return $imageName;
         }

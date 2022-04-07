@@ -459,7 +459,7 @@
                         <td><?= $publisher['name'] ?></td>       
                         <td><?= $publisher['email'] ?></td>
                         <td>
-                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $publisher['image'];?>">
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/publishers/<?= $publisher['image'];?>">
                         </td>
                         <td><?= $publisher['phone'] ?></td>
                         <td><?= $publisher['alt_phone'] ?></td>
