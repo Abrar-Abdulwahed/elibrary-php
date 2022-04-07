@@ -441,6 +441,9 @@
                       <tr>
                         <th>اسم القسم</th>
                         <th>الصورة</th>
+                        <th>تاريخ الإنشاء</th>
+                        <th>بواسطة</th>
+                        <th>تاريخ التعديل</th>
                         <th>الحالة</th>
                         <th>العمليات</th>
                       </tr>
@@ -452,6 +455,9 @@
                         <td>
                           <img class="img-fluid rounded" height="150px" width="150px" src="images/category/<?= $category['image'];?>">
                         </td>
+                        <td><?= $category['created_at'] ?></td>
+                        <td><?= $category['created_by'] ?></td>
+                        <td><?= $category['updated_at'] ?></td>
                         <td>
                           <?php if($category['is_active']==1) {?>    
                           <span class="badge bg-label-success me-1">مفعل</span>
