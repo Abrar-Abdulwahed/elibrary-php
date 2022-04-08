@@ -470,6 +470,32 @@ include_once $URLROOT.'/includes/head.php' ?>
                       </select>
                     </div>
                   </div>
+                  <div class="mb-3 col-md-3" data-select2-id="49">
+                    <label for="authors" class="form-label">المؤلف</label>
+                    <div class="position-relative" data-select2-id="48">
+                      <select name="book_author" id="authors" class="select2 form-select select2-hidden-accessible" data-select2-id="authors" tabindex="-1" aria-hidden="true">
+                        <option disabled selected>اختر المؤلف</option>
+                        <?php foreach ($params['authors'] as $author){ ?>
+                          <option value="<?= $author['id'] ?>">
+                                <?= $author['name'] ?>
+                          </option>
+                        <?php } ?>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-3" data-select2-id="50">
+                    <label for="publishers" class="form-label">دار النشر</label>
+                    <div class="position-relative" data-select2-id="49">
+                      <select name="book_publisher" id="publishers" class="select2 form-select select2-hidden-accessible" data-select2-id="publishers" tabindex="-1" aria-hidden="true">
+                        <option disabled selected>اختر الناشر</option>
+                        <?php foreach ($params['publishers'] as $publisher){ ?>
+                          <option value="<?= $publisher['id'] ?>">
+                                <?= $publisher['name'] ?>
+                          </option>
+                        <?php } ?>
+                      </select>
+                    </div>
+                  </div>
                   <div class="col-md-3">
                     <label class="form-label" for="multicol-book-format">صيغة الكتاب</label>
                     <input name="book_format" type="text" id="multicol-book-format" class="form-control" placeholder="مثال: كتاب مطبوع أو pdf" />

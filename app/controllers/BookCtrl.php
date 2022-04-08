@@ -3,10 +3,12 @@ namespace elibrary\app\controllers;
 
 use elibrary\app\core\Application;
 use elibrary\app\models\CategoryModel;
+use elibrary\app\models\AuthorModel;
+use elibrary\app\models\PublisherModel;
 use elibrary\app\models\BookModel;
 
 class BookCtrl extends Controller{
-    public function getBody(){
+    public function getBody($op){
         $book               = new BookModel();  
         $book->title        = $_POST['book_title'];
         $imageName          = $this->uploadFile($_FILES['image']);
@@ -15,13 +17,18 @@ class BookCtrl extends Controller{
         $book->description  = $_POST['book_description'];
         $book->pages_number = $_POST['book_pages_number'];
         $book->category_id  = $_POST['book_category'];
+        $book->publisher_id  = $_POST['book_publisher'];
+        $book->author_id  = $_POST['book_author'];
         $book->format       = $_POST['book_format'];
         $book->quantity     = $_POST['book_quantity'];
         $book->is_active    = $_POST['is_active'];
         $book->created_by   = 1;
-        date_default_timezone_set('Africa/Nairobi');
-        $book->created_at   = date("d/m/Y H:i:s") ;
-        $book->updated_at   = date("d/m/Y H:i:s") ;
+        if($op == 'create'){
+            $book->created_at   = date("Y-m-d H:i:s");
+            $book->updated_at   = date("Y-m-d H:i:s") ;
+        }
+        else
+            $book->updated_at   = date("Y-m-d H:i:s") ;
         return $book;
     }
     function listAll($parameters=null){
@@ -34,11 +41,17 @@ class BookCtrl extends Controller{
         if($_SERVER['REQUEST_METHOD'] === "GET"){
             $category      = new CategoryModel();
             $allCategoires = $category->getAll();
-            $data          = array('categories' => $allCategoires);
+            $author        = new AuthorModel();
+            $allAuthors    = $author->getAll();
+            $publisher     = new PublisherModel();
+            $allPublishers = $publisher->getAll();
+            $data          = array('categories' => $allCategoires, 
+                                   'publishers' => $allPublishers, 
+                                   'authors'    => $allAuthors);
             $this->view('admin/book/add_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
-            $book = $this->getBody();
+            $book = $this->getBody('create');
             $book->save();
             $this->redirect('/books');
         }
@@ -53,7 +66,7 @@ class BookCtrl extends Controller{
             $this->view('admin/book/update_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
-            $book = $this->getBody();
+            $book = $this->getBody('update');
             $book->update($_POST['id']);
             $this->redirect('/books');
         }
@@ -64,15 +77,15 @@ class BookCtrl extends Controller{
         $this->redirect('/books');
     }
     public static function uploadFile(array $imageFile): string{
-        if (!is_dir(__DIR__ . '/../../public/images')) {
-            mkdir(__DIR__ . '/../../public/images');
+        if (!is_dir(__DIR__ . '/../../public/images/books')) {
+            mkdir(__DIR__ . '/../../public/images/books');
         }
         if ($imageFile && $imageFile['tmp_name']) {
             $image = explode('.', $imageFile['name']);
             $imageExtension = end($image);
 
             $imageName = uniqid(). "." . $imageExtension;
-            $imagePath =  __DIR__ . '/../../public/images/' . $imageName;
+            $imagePath =  __DIR__ . '/../../public/images/books/' . $imageName;
 
             move_uploaded_file($imageFile['tmp_name'], $imagePath);
             return $imageName;
