@@ -438,7 +438,7 @@ include_once $URLROOT.'/includes/head.php' ?>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="multicol-publisher-name">اسم دار النشر</label>
-                    <input name="publisher_name" type="text" id="multicol-publisher-name" value="<?php echo $params->image ?>" class="form-control"/>
+                    <input name="publisher_name" type="text" id="multicol-publisher-name" value="<?php echo $params->name ?>" class="form-control"/>
                   </div>
                   <div class="col-md-3">
                     <label class="form-label" for="multicol-publisher-email">البريد الإلكتروني للناشر</label>
