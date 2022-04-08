@@ -448,6 +448,9 @@
                         <th>عدد الصفحات</th>
                         <th>الصيغة</th>
                         <th>الكمية</th>
+                        <th>تاريخ الإنشاء</th>
+                        <th>بواسطة</th>
+                        <th>تاريخ التعديل</th>
                         <th>الحالة</th>
                         <th>العمليات</th>
                       </tr>
@@ -464,8 +467,11 @@
                         <td>Publisher</td>
                         <td><?= $book['price'];?></td>
                         <td><?= $book['pages_number'];?></td>
-                        <td><?= $book['format'];?></td>
-                        <td><?= $book['quantity'];?></td>
+                        <td><?= $book['format'] ?></td>
+                        <td><?= $book['quantity'] ?></td>
+                        <td><?= $book['created_at'] ?></td>
+                        <td><?= $book['created_by'] ?></td>
+                        <td><?= $book['updated_at'] ?></td>
                         <td>
                           <?php if($book['is_active'] == 1) {?>    
                           <span class="badge bg-label-success me-1">مفعل</span>

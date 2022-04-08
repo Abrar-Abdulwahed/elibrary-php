@@ -451,9 +451,9 @@
                     <tbody>
                     <?php foreach($params as $category){?>
                       <tr> 
-                        <td><?= $category['name'];?></td>
+                        <td><?= $category['name'] ?></td>
                         <td>
-                          <img class="img-fluid rounded" height="150px" width="150px" src="images/category/<?= $category['image'];?>">
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/categories/<?= $category['image'];?>">
                         </td>
                         <td><?= $category['created_at'] ?></td>
                         <td><?= $category['created_by'] ?></td>
