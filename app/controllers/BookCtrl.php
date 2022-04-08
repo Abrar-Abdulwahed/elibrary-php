@@ -8,7 +8,7 @@ use elibrary\app\models\PublisherModel;
 use elibrary\app\models\BookModel;
 
 class BookCtrl extends Controller{
-    public function getBody(){
+    public function getBody($op){
         $book               = new BookModel();  
         $book->title        = $_POST['book_title'];
         $imageName          = $this->uploadFile($_FILES['image']);
@@ -23,10 +23,12 @@ class BookCtrl extends Controller{
         $book->quantity     = $_POST['book_quantity'];
         $book->is_active    = $_POST['is_active'];
         $book->created_by   = 1;
-        date_default_timezone_set('Africa/Nairobi');
-        $book->created_at   = date("d/m/Y H:i:s") ;
-        $book->updated_at   = date("d/m/Y H:i:s") ;
-        return $book;
+        if($op == 'create'){
+            $book->created_at   = date("Y-m-d H:i:s");
+            $book->updated_at   = date("Y-m-d H:i:s") ;
+        }
+        else
+            $book->updated_at   = date("Y-m-d H:i:s") ;
     }
     function listAll($parameters=null){
         $categories=new BookModel();
