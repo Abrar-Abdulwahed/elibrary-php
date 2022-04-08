@@ -29,6 +29,7 @@ class BookCtrl extends Controller{
         }
         else
             $book->updated_at   = date("Y-m-d H:i:s") ;
+        return $book;
     }
     function listAll($parameters=null){
         $categories=new BookModel();
@@ -50,7 +51,7 @@ class BookCtrl extends Controller{
             $this->view('admin/book/add_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
-            $book = $this->getBody();
+            $book = $this->getBody('create');
             $book->save();
             $this->redirect('/books');
         }
@@ -65,7 +66,7 @@ class BookCtrl extends Controller{
             $this->view('admin/book/update_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
-            $book = $this->getBody();
+            $book = $this->getBody('update');
             $book->update($_POST['id']);
             $this->redirect('/books');
         }
@@ -76,15 +77,15 @@ class BookCtrl extends Controller{
         $this->redirect('/books');
     }
     public static function uploadFile(array $imageFile): string{
-        if (!is_dir(__DIR__ . '/../../public/images')) {
-            mkdir(__DIR__ . '/../../public/images');
+        if (!is_dir(__DIR__ . '/../../public/images/books')) {
+            mkdir(__DIR__ . '/../../public/images/books');
         }
         if ($imageFile && $imageFile['tmp_name']) {
             $image = explode('.', $imageFile['name']);
             $imageExtension = end($image);
 
             $imageName = uniqid(). "." . $imageExtension;
-            $imagePath =  __DIR__ . '/../../public/images/' . $imageName;
+            $imagePath =  __DIR__ . '/../../public/images/books/' . $imageName;
 
             move_uploaded_file($imageFile['tmp_name'], $imagePath);
             return $imageName;

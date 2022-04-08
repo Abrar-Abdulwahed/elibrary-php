@@ -457,7 +457,7 @@
                       <tr>        
                         <td><?= $book['title'] ?></td>       
                         <td>
-                          <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $book['image'];?>">
+                          <img class="img-fluid rounded" height="150px" width="150px" src="images/books/<?= $book['image'];?>">
                         </td>
                         <td><?= $book['description'] ?></td>
                         <td>Author</td>
