@@ -436,7 +436,7 @@ include_once $URLROOT.'/includes/head.php' ?>
             <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">الأقسام/</span> تعديل قسم</h4>
             <!-- Multi Column with Form Separator -->
             <div class="card mb-4">
-              <h5 class="card-header">انشاء قسم جديد</h5>
+              <h5 class="card-header">تعديل قسم</h5>
               <form class="card-body" action="/update_category" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?php echo $params->id ?>">
                 <div class="row g-3">
