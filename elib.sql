@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08 أبريل 2022 الساعة 11:52
+-- Generation Time: 08 أبريل 2022 الساعة 11:56
 -- إصدار الخادم: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -186,14 +186,6 @@ CREATE TABLE `publishers` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `created_by` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- إرجاع أو استيراد بيانات الجدول `publishers`
---
-
-INSERT INTO `publishers` (`id`, `name`, `phone`, `alt_phone`, `fax`, `email`, `address`, `country`, `image`, `is_active`, `created_at`, `updated_at`, `created_by`) VALUES
-(5, 'دار النشر الأولى', '4245245', '4234524', '23452352', 'abrar_abdulwahed@gmail.com', 'وصف دار النشر الأولى', 'اليمن', '624f83bfc57ee.png', 0, '2022-04-07 22:32:40', '2022-04-08 00:37:19', 1),
-(6, 'دار النشر الثانية', '9873954387', '324982', '30481098502', 'abrar_abdulwahed@yahoo.com', 'هلا والله', 'اليمن', '62500402e6e39.png', 1, '2022-04-08 09:44:34', '2022-04-08 09:44:34', 1);
 
 -- --------------------------------------------------------
 
