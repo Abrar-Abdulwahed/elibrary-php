@@ -17,8 +17,8 @@ class BookCtrl extends Controller{
         $book->description  = $_POST['book_description'];
         $book->pages_number = $_POST['book_pages_number'];
         $book->category_id  = $_POST['book_category'];
-        $book->publisher_id  = $_POST['book_publisher'];
-        $book->author_id  = $_POST['book_author'];
+        $book->publisher_id = $_POST['book_publisher'];
+        $book->author_id    = $_POST['book_author'];
         $book->format       = $_POST['book_format'];
         $book->quantity     = $_POST['book_quantity'];
         $book->is_active    = $_POST['is_active'];
@@ -32,9 +32,9 @@ class BookCtrl extends Controller{
         return $book;
     }
     function listAll($parameters=null){
-        $categories=new BookModel();
-        $allCategories=$categories->getAll();
-        $this->view('admin/book/list_books',$allCategories);
+        $book       = new BookModel();
+        $allBooks   = $book->getAll();
+        $this->view('admin/book/list_books',$allBooks);
 
     }
     function create(){
@@ -62,7 +62,15 @@ class BookCtrl extends Controller{
             $selectedBook   = $book->getSingleRow($params['id']);
             $category       = new CategoryModel();
             $allCategoires  = $category->getAll();
-            $data          = array('categories' => $allCategoires, 'book' => $selectedBook);
+            $author         = new AuthorModel();
+            $allAuthors     = $author->getAll();
+            $publisher      = new PublisherModel();
+            $allPublishers  = $publisher->getAll();
+            $data           = array(
+                            'categories' => $allCategoires, 
+                            'authors' => $allAuthors,
+                            'publishers' => $allPublishers,
+                            'book' => $selectedBook);
             $this->view('admin/book/update_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){

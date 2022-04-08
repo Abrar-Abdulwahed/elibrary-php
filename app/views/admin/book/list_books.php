@@ -1,5 +1,10 @@
 
-<?php include_once dirname(__FILE__).'/../includes/head.php' ?>
+<?php 
+use elibrary\app\models\CategoryModel;
+use elibrary\app\models\AuthorModel;
+use elibrary\app\models\PublisherModel;
+
+include_once dirname(__FILE__).'/../includes/head.php' ?>
   <!-- Layout wrapper -->
   <div class="layout-wrapper layout-content-navbar  ">
     <div class="layout-container">
@@ -442,6 +447,7 @@
                         <th>اسم الكتاب</th>
                         <th>الصورة</th>
                         <th>وصف الكتاب</th>
+                        <th>تصنيف الكتاب</th>
                         <th>المؤلف</th>
                         <th>الناشر</th>
                         <th>السعر</th>
@@ -463,10 +469,29 @@
                           <img class="img-fluid rounded" height="150px" width="150px" src="images/books/<?= $book['image'];?>">
                         </td>
                         <td><?= $book['description'] ?></td>
-                        <td>Author</td>
-                        <td>Publisher</td>
-                        <td><?= $book['price'];?></td>
-                        <td><?= $book['pages_number'];?></td>
+                        <td>
+                        <?php
+                            $category = new CategoryModel(); 
+                            $category = $category->getSingleRow($book['category_id']);
+                            echo $category->name;
+                        ?> 
+                        </td>
+                        <td>
+                        <?php
+                            $author = new AuthorModel(); 
+                            $author = $author->getSingleRow($book['author_id']);
+                            echo $author->name;
+                        ?> 
+                        </td>
+                        <td>
+                        <?php
+                            $publisher = new PublisherModel(); 
+                            $publisher = $publisher->getSingleRow($book['publisher_id']);
+                            echo $publisher->name;
+                        ?> 
+                        </td>
+                        <td><?= $book['price'] ?></td>
+                        <td><?= $book['pages_number'] ?></td>
                         <td><?= $book['format'] ?></td>
                         <td><?= $book['quantity'] ?></td>
                         <td><?= $book['created_at'] ?></td>

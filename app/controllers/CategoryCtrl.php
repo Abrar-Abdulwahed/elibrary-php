@@ -55,15 +55,15 @@ class CategoryCtrl extends Controller{
     }
     public static function uploadFile(array $imageFile): string{
         // check images direction
-        if (!is_dir(__DIR__ . '/../../public/images/category')) {
-            mkdir(__DIR__ . '/../../public/images/category');
+        if (!is_dir(__DIR__ . '/../../public/images/categories')) {
+            mkdir(__DIR__ . '/../../public/images/categories');
         }
 
         if ($imageFile && $imageFile['tmp_name']) {
             $image = explode('.', $imageFile['name']);
             $imageExtension = end($image);
             $imageName = uniqid(). "." . $imageExtension;
-            $imagePath =  __DIR__ . '/../../public/images/category/' . $imageName;
+            $imagePath =  __DIR__ . '/../../public/images/categories/' . $imageName;
             move_uploaded_file($imageFile['tmp_name'], $imagePath);
             return $imageName;
         }

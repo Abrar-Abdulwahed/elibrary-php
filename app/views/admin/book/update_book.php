@@ -464,9 +464,38 @@ include_once $URLROOT.'/includes/head.php' ?>
                       <select name="book_category" id="categories" class="select2 form-select select2-hidden-accessible" data-select2-id="categories" tabindex="-1" aria-hidden="true">
                         <option disabled selected>اختر قسم</option>
                         <?php foreach ($params['categories'] as $category){ ?>
-                          <option <?php if ($category['id'] === $params['book']->category_id) echo "selected"?> value="<?= $params['book']->category_id ?>"
+                          <option <?php if ($category['id'] === $params['book']->category_id) echo "selected"?> value="<?php echo $category['id'] ?>"
                           >
                                 <?= $category['name'] ?>
+                          </option>
+                        <?php } ?>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-3" data-select2-id="49">
+                    <label for="authors" class="form-label">المؤلف</label>
+                    <div class="position-relative" data-select2-id="48">
+                      <select name="book_author" id="authors" class="select2 form-select select2-hidden-accessible" data-select2-id="authors" tabindex="-1" aria-hidden="true">
+                        <option disabled selected>اختر المؤلف</option>
+                        <?php foreach ($params['authors'] as $author){ ?>
+                          <option <?php if ($author['id'] === $params['book']->author_id) echo "selected" ?>
+                                  value="<?php echo $author['id'] ?>">
+                                <?= $author['name'] ?>
+                          </option>
+                        <?php } ?>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-3 col-md-3" data-select2-id="50">
+                    <label for="publishers" class="form-label">دار النشر</label>
+                    <div class="position-relative" data-select2-id="49">
+                      <select name="book_publisher" id="publishers" class="select2 form-select select2-hidden-accessible" data-select2-id="publishers" tabindex="-1" aria-hidden="true">
+                        <option disabled selected>اختر الناشر</option>
+                        <?php foreach ($params['publishers'] as $publisher){ ?>
+                          <option <?php if ($publisher['id'] === $params['book']->publisher_id) echo "selected" ?>
+                                  value="<?php echo $publisher['id'] ?>">
+                                <?= $publisher['name'] ?>
                           </option>
                         <?php } ?>
                       </select>
