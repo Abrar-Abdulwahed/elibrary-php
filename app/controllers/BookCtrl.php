@@ -3,6 +3,8 @@ namespace elibrary\app\controllers;
 
 use elibrary\app\core\Application;
 use elibrary\app\models\CategoryModel;
+use elibrary\app\models\AuthorModel;
+use elibrary\app\models\PublisherModel;
 use elibrary\app\models\BookModel;
 
 class BookCtrl extends Controller{
@@ -15,6 +17,8 @@ class BookCtrl extends Controller{
         $book->description  = $_POST['book_description'];
         $book->pages_number = $_POST['book_pages_number'];
         $book->category_id  = $_POST['book_category'];
+        $book->publisher_id  = $_POST['book_publisher'];
+        $book->author_id  = $_POST['book_author'];
         $book->format       = $_POST['book_format'];
         $book->quantity     = $_POST['book_quantity'];
         $book->is_active    = $_POST['is_active'];
@@ -34,7 +38,13 @@ class BookCtrl extends Controller{
         if($_SERVER['REQUEST_METHOD'] === "GET"){
             $category      = new CategoryModel();
             $allCategoires = $category->getAll();
-            $data          = array('categories' => $allCategoires);
+            $author        = new AuthorModel();
+            $allAuthors    = $author->getAll();
+            $publisher     = new PublisherModel();
+            $allPublishers = $publisher->getAll();
+            $data          = array('categories' => $allCategoires, 
+                                   'publishers' => $allPublishers, 
+                                   'authors'    => $allAuthors);
             $this->view('admin/book/add_book', $data);
         }
         elseif($_SERVER['REQUEST_METHOD'] === "POST"){
