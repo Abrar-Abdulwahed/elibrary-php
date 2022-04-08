@@ -449,7 +449,6 @@ include_once $URLROOT.'/includes/head.php' ?>
                     <div class="input-group input-group-merge">
                       <input  name="image" type="file"  class="form-control"  aria-describedby="multicol-email2" value="<?php echo $params->image ?>" />  
                     </div>
-                    <p><img src="/../images/<?php echo $params->image ?>" width="50"></p>  
                   </div>
                   <div class="col-md-6">
                     <div class="form-password-toggle">
